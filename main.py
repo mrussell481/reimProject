@@ -7,7 +7,7 @@ logging.basicConfig(filename="records.log", level=logging.DEBUG, format=f'%(asct
 
 @app.route("/", methods=["GET"])
 def test():
-    return "Hello World"
+    return "Hello Worl"
 
 
 if __name__ == '__main__':
