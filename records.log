@@ -105,3 +105,4 @@ jinja2.exceptions.TemplateNotFound: GatorFanPage.html
 2021-06-14 13:58:37,930 INFO 127.0.0.1 - - [14/Jun/2021 13:58:37] "GET / HTTP/1.1" 200 -
 2021-06-14 13:58:41,357 INFO 127.0.0.1 - - [14/Jun/2021 13:58:41] "GET /bugCatch HTTP/1.1" 200 -
 2021-06-14 14:02:21,799 INFO 127.0.0.1 - - [14/Jun/2021 14:02:21] "GET /bugCatch HTTP/1.1" 200 -
+2021-06-15 14:56:18,894 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

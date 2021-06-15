@@ -1,17 +1,22 @@
 from flask import Flask, request, jsonify, render_template
 import logging
-from services.manager_service import ManagerService
-from services.member_service import MemberService
+from services.manager_service_impl import ManagerServiceImpl
+from services.member_service_impl import MemberServiceImpl
+from daos.manager_dao_impl import ManagerDaoImpl
+from daos.member_dao_impl import MemberDaoImpl
+from entities.member import Member
+from entities.manager import Manager
+from entities.reimbursement import Reimbursement
 from exceptions.user_not_found import UserNotFound
 
 app: Flask = Flask(__name__)
 logging.basicConfig(filename="records.log", level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(message)s')
 
 
-# member_dao = MemberDaoImpl()
-# manager_dao = ManagerDaoImpl()
-# manager_service = ManagerServiceImpl(manager_dao)
-# member_service = MemberServiceImpl(member_dao)
+member_dao = MemberDaoImpl()
+manager_dao = ManagerDaoImpl()
+manager_service = ManagerServiceImpl(manager_dao)
+member_service = MemberServiceImpl(member_dao)
 
 
 # The landing page is just here to help build context leading up to the other functions of this site.
@@ -41,40 +46,75 @@ def login():
     user_name = body["userName"]
     password = body["password"]
     try:
-        ManagerService.login(user_name, password)
+        manager = manager_service.login(user_name, password)
+        return jsonify(manager.as_json_dict()), 200
     except UserNotFound:
         try:
-            MemberService.login(user_name, password)
+            member = member_service.login(user_name, password)
+            return jsonify(member.as_json_dict()), 200
         except UserNotFound:
             return "Incorrect username or password", 404
 
 
-# Returns a specific reimbursement that managers can approve or deny.
-# The front-end will change views and populate a form with the info given from this function.
-@app.route("/bugCatch/manager/<man_id>/reim/<reim_id>", methods=["GET"])
-def retrieve_man_request():
-    pass
+# A second call made by the login button if the user is a manager. Returns all requests.
+@app.route("/bugCatch/requests", methods=["GET"])
+def requests():
+    request_list = manager_service.view_all_requests()
+    json_list = [l.as_json_dict() for l in request_list]
+    return jsonify(json_list), 200
 
 
-# Returns a specific reimbursement for members to view.
-# Does not include approve/deny buttons on the front-end, nor will there be a comment box.
+# A second call if the user is a member. Returns only requests belonging to them.
+@app.route("/bugCatch/requests/<mem_id>", methods=["GET"])
+def requests_by_user(mem_id: int):
+    request_list = member_service.view_member_requests(mem_id)
+    json_list = [l.as_json_dict() for l in request_list]
+    return jsonify(json_list), 200
+
+
+# Returns a specific reimbursement.
+# Managers should also see buttons to approve/deny new requests, but that is handled on the front end.
 @app.route("/bugCatch/member/<mem_id>/reim/<reim_id>", methods=["GET"])
-def retrieve_mem_request():
-    pass
+def retrieve_request(mem_id: int, reim_id: int):
+    reimbursement = manager_service.view_request(mem_id, reim_id)
+    return jsonify(reimbursement.as_json_dict()), 200
 
 
 # Takes in information from a reimbursement request,
 # returns either a success or failure message.
+# Front end logic should check each element to ensure everything is filled out.
 @app.route("/bugCatch/member/<mem_id>/create", methods=["POST"])
-def create_request():
-    pass
+def create_request(mem_id: int):
+    try:
+        body = request.json
+        new_request = Reimbursement(body["reimbursementID"],
+                                    body["reimbursementName"],
+                                    body["sender"],
+                                    body["reason"],
+                                    body["amount"],
+                                    body["date"],
+                                    body["approved"],
+                                    body["comment"],
+                                    body["memberId"])
+        new_request.fk_mem_id = mem_id
+        member_service.create_request(new_request)
+        return "Request created successfully.", 201
+    except:
+        return "Unable to create request.", 422
 
 
 # Updates a request's status to "approved" or "denied", and may also have a comment.
 # Returns a success or failure message.
-@app.route("/bugCatch/manager/<man_id>/reim/<reim_id>/judge", methods=["PATCH"])
-def judge_request():
-    pass
+@app.route("/bugCatch/member/<mem_id>/reim/<reim_id>/judge", methods=["PATCH"])
+def judge_request(mem_id: int, reim_id: int):
+    body = request.json
+    verdict = body["verdict"]
+    comment = body["comment"]
+    try:
+        manager_service.judge_request(mem_id, reim_id, verdict, comment)
+        return "Success.", 200
+    except:
+        return "Failure.", 422
 
 
 # Returns a list of numbers that represent various statistics about the requests
