@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Lets the browser know that this is a HTML5 page.-->
+<html lang="en"> <!-- Root tag that contains all other html tags and content.-->
+<head>
+    <meta charset="UTF-8">
+    <title>Gator Football</title> <!-- Appears at the top of the page.-->
+    <style>
+        /* selector (key: value) called a property in CSS. */
+        b {color: blue;}
+        p {color: purple;}
+        h3 {color: green;}
+        #tebow {color:blue}
+    </style>
+    <link rel="stylesheet" href="C:\Users\mrmas\AppData\Roaming\JetBrains\PyCharmCE2021.1\scratches\style.css">
+</head> <!-- Contains meta information: tags for search engines, CSS, and links to external files.-->
+<body> <!-- Majority of HTML content goes here.-->
+    <h1>Gator Football</h1>
+    <p>The Gators are the football for the University of Florida. They play in the SEC.
+        Their biggest rivals are FSU, UGA and LSU. Invented <b>Gatorade.</b>
+    </p>
+    <hr>
+    <h3 style="color: red;">Heisman winners</h3> <!-- Inline CSS overrides header CSS-->
+    <ul>
+        <li>Steve Spurrier</li>
+        <li>Danny Querffel</li>
+        <li id="tebow">Tim Tebow</li>
+    </ul>
+
+    <h3 class="champ">National Championships</h3>
+    <table>
+        <thead class="champ"><th>Opponent</th><th>Year</th></thead>
+        <tbody>
+            <tr><td>FSU</td><td>1996</td></tr>
+            <tr><td>LLS</td><td>1998</td></tr>
+            <tr><td>PoDD</td><td>1998</td></tr>
+        </tbody>
+    </table>
+
+    <img height="20%" width="20%" src="C:\Users\mrmas_d2t5g6y\Desktop\Programming\ClientStuff\gator.jpg" alt="Gators Logo">
+
+</body>
+</html>
