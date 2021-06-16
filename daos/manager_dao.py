@@ -14,13 +14,8 @@ class ManagerDao(ABC):
     def view_all_requests(self) -> List[Reimbursement]:
         pass
 
-    # Should be exactly the same as the member version of this method.
     @abstractmethod
-    def view_request(self, member_id: int, request_id: int) -> Reimbursement:
-        pass
-
-    @abstractmethod
-    def judge_request(self, member_id: int, request_id: int, verdict: str, comment: str) -> str:
+    def judge_request(self, member_id: int, request_id: int, verdict: bool, comment: str) -> str:
         pass
 
     @abstractmethod

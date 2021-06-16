@@ -48,11 +48,11 @@ def login():
     try:
         manager = manager_service.login(user_name, password)
         return jsonify(manager.as_json_dict()), 200
-    except UserNotFound:
+    except Exception:
         try:
             member = member_service.login(user_name, password)
             return jsonify(member.as_json_dict()), 200
-        except UserNotFound:
+        except Exception:
             return "Incorrect username or password", 404
 
 
@@ -74,15 +74,16 @@ def requests_by_user(mem_id: int):
 
 # Returns a specific reimbursement.
 # Managers should also see buttons to approve/deny new requests, but that is handled on the front end.
-@app.route("/bugCatch/member/<mem_id>/reim/<reim_id>", methods=["GET"])
-def retrieve_request(mem_id: int, reim_id: int):
-    reimbursement = manager_service.view_request(mem_id, reim_id)
-    return jsonify(reimbursement.as_json_dict()), 200
+#@app.route("/bugCatch/member/<mem_id>/reim/<reim_id>", methods=["GET"])
+#def retrieve_request(mem_id: int, reim_id: int):
+#    reimbursement = member_service.view_request(mem_id, reim_id)
+#    return jsonify(reimbursement.as_json_dict()), 200
 
 
 # Takes in information from a reimbursement request,
 # returns either a success or failure message.
 # Front end logic should check each element to ensure everything is filled out.
+# Optional: refresh the list of requests to include the new one.
 @app.route("/bugCatch/member/<mem_id>/create", methods=["POST"])
 def create_request(mem_id: int):
     try:

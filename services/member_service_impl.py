@@ -11,13 +11,13 @@ class MemberServiceImpl(MemberService):
         self.member_dao = member_dao
 
     def login(self, user_name: str, password: str) -> Member:
-        pass
+        return self.member_dao.login(user_name, password)
 
     def view_member_requests(self, member_id: int) -> List[Reimbursement]:
-        pass
+        return self.member_dao.view_member_requests(member_id)
 
-    def view_request(self, member_id: int, request_id: int) -> Reimbursement:
-        pass
+    #def view_request(self, member_id: int, request_id: int) -> Reimbursement:
+    #    pass
 
     def create_request(self, reim: Reimbursement) -> str:
-        pass
+        return self.member_dao.create_request(reim)

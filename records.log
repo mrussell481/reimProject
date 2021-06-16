@@ -106,3 +106,209 @@ jinja2.exceptions.TemplateNotFound: GatorFanPage.html
 2021-06-14 13:58:41,357 INFO 127.0.0.1 - - [14/Jun/2021 13:58:41] "GET /bugCatch HTTP/1.1" 200 -
 2021-06-14 14:02:21,799 INFO 127.0.0.1 - - [14/Jun/2021 14:02:21] "GET /bugCatch HTTP/1.1" 200 -
 2021-06-15 14:56:18,894 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 19:57:50,083 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:00:52,313 ERROR Exception on /bugCatch/login [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 49, in login
+    manager = manager_service.login(user_name, password)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 14, in login
+    return self.manager_dao.login(user_name, password)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 13, in login
+    cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "q83n54v18746"
+LINE 1: ...er where man_user = toughguy12 and man_pass = 0921q83n54v187...
+                                                             ^
+
+2021-06-15 20:00:52,350 INFO 127.0.0.1 - - [15/Jun/2021 20:00:52] "[35m[1mGET /bugCatch/login HTTP/1.1[0m" 500 -
+2021-06-15 20:03:48,712 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:04:01,095 ERROR Exception on /bugCatch/login [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 49, in login
+    manager = manager_service.login(user_name, password)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 14, in login
+    return self.manager_dao.login(user_name, password)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 13, in login
+    cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "q83n54v18746"
+LINE 1: ...er where man_user = toughguy12 and man_pass = 0921q83n54v187...
+                                                             ^
+
+2021-06-15 20:04:01,099 INFO 127.0.0.1 - - [15/Jun/2021 20:04:01] "[35m[1mGET /bugCatch/login HTTP/1.1[0m" 500 -
+2021-06-15 20:04:26,080 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:04:30,514 ERROR Exception on /bugCatch/login [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 49, in login
+    manager = manager_service.login(user_name, password)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 14, in login
+    return self.manager_dao.login(user_name, password)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 13, in login
+    cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at or near "q83n54v18746"
+LINE 1: ...er where man_user = toughguy12 and man_pass = 0921q83n54v187...
+                                                             ^
+
+2021-06-15 20:04:30,518 INFO 127.0.0.1 - - [15/Jun/2021 20:04:30] "[35m[1mGET /bugCatch/login HTTP/1.1[0m" 500 -
+2021-06-15 20:05:18,041 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:05:23,016 INFO 127.0.0.1 - - [15/Jun/2021 20:05:23] "GET /bugCatch/login HTTP/1.1" 200 -
+2021-06-15 20:05:51,020 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:05:58,292 INFO 127.0.0.1 - - [15/Jun/2021 20:05:58] "GET /bugCatch/login HTTP/1.1" 200 -
+2021-06-15 20:06:58,798 INFO 127.0.0.1 - - [15/Jun/2021 20:06:58] "GET /bugCatch/login HTTP/1.1" 200 -
+2021-06-15 20:09:39,180 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:10:22,338 INFO 127.0.0.1 - - [15/Jun/2021 20:10:22] "[33mGET /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-15 20:11:43,983 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:11:48,073 INFO 127.0.0.1 - - [15/Jun/2021 20:11:48] "[33mGET /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-15 20:12:15,486 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:12:19,760 INFO 127.0.0.1 - - [15/Jun/2021 20:12:19] "GET /bugCatch/login HTTP/1.1" 200 -
+2021-06-15 20:13:06,980 INFO 127.0.0.1 - - [15/Jun/2021 20:13:06] "GET /bugCatch/login HTTP/1.1" 200 -
+2021-06-15 20:31:12,329 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:31:52,376 INFO 127.0.0.1 - - [15/Jun/2021 20:31:52] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-15 20:34:42,571 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:34:57,037 ERROR Exception on /bugCatch/requests/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 70, in requests_by_user
+    request_list = member_service.view_member_requests(mem_id)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\member_service_impl.py", line 17, in view_member_requests
+    return self.member_dao.view_member_requests(member_id)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\member_dao_impl.py", line 21, in view_member_requests
+    cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "member_id" does not exist
+LINE 1: select * from reimbursement where member_id = '1' order by r...
+                                          ^
+HINT:  Perhaps you meant to reference the column "reimbursement.mem_id".
+
+2021-06-15 20:34:57,041 INFO 127.0.0.1 - - [15/Jun/2021 20:34:57] "[35m[1mGET /bugCatch/requests/1 HTTP/1.1[0m" 500 -
+2021-06-15 20:35:56,249 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:36:02,630 INFO 127.0.0.1 - - [15/Jun/2021 20:36:02] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-15 20:36:12,333 INFO 127.0.0.1 - - [15/Jun/2021 20:36:12] "GET /bugCatch/requests/2 HTTP/1.1" 200 -
+2021-06-15 20:36:16,276 INFO 127.0.0.1 - - [15/Jun/2021 20:36:16] "GET /bugCatch/requests/3 HTTP/1.1" 200 -
+2021-06-15 20:36:21,845 INFO 127.0.0.1 - - [15/Jun/2021 20:36:21] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-15 20:44:29,944 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:46:59,908 INFO 127.0.0.1 - - [15/Jun/2021 20:46:59] "[31m[1mPATCH /bugCatch/member/3/reim/4/judge HTTP/1.1[0m" 422 -
+2021-06-15 20:49:30,610 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:49:35,087 INFO 127.0.0.1 - - [15/Jun/2021 20:49:35] "[31m[1mPATCH /bugCatch/member/3/reim/4/judge HTTP/1.1[0m" 422 -
+2021-06-15 20:50:06,000 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:50:13,930 ERROR Exception on /bugCatch/member/3/reim/4/judge [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 115, in judge_request
+    manager_service.judge_request(mem_id, reim_id, verdict, comment)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 20, in judge_request
+    return self.manager_dao.judge_request(member_id, request_id, verdict, comment)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 38, in judge_request
+    cursor.execute(sql)
+psycopg2.errors.UndefinedColumn: column "comment" of relation "reimbursement" does not exist
+LINE 1: update reimbursement set comment = 'go away' where mem_id = ...
+                                 ^
+
+2021-06-15 20:50:13,934 INFO 127.0.0.1 - - [15/Jun/2021 20:50:13] "[35m[1mPATCH /bugCatch/member/3/reim/4/judge HTTP/1.1[0m" 500 -
+2021-06-15 20:51:05,817 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:51:09,036 ERROR Exception on /bugCatch/member/3/reim/4/judge [PATCH]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 115, in judge_request
+    manager_service.judge_request(mem_id, reim_id, verdict, comment)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 20, in judge_request
+    return self.manager_dao.judge_request(member_id, request_id, verdict, comment)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 39, in judge_request
+    cursor.commit()
+AttributeError: 'psycopg2.extensions.cursor' object has no attribute 'commit'
+2021-06-15 20:51:09,040 INFO 127.0.0.1 - - [15/Jun/2021 20:51:09] "[35m[1mPATCH /bugCatch/member/3/reim/4/judge HTTP/1.1[0m" 500 -
+2021-06-15 20:51:39,770 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:51:44,739 INFO 127.0.0.1 - - [15/Jun/2021 20:51:44] "PATCH /bugCatch/member/3/reim/4/judge HTTP/1.1" 200 -
+2021-06-15 20:52:49,368 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 20:52:57,441 INFO 127.0.0.1 - - [15/Jun/2021 20:52:57] "PATCH /bugCatch/member/3/reim/4/judge HTTP/1.1" 200 -
+2021-06-15 20:59:20,834 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 21:05:03,539 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 21:05:24,969 INFO 127.0.0.1 - - [15/Jun/2021 21:05:24] "[31m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 422 -
+2021-06-15 21:05:45,866 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 21:05:49,062 ERROR Exception on /bugCatch/member/1/create [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 101, in create_request
+    member_service.create_request(new_request)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\member_service_impl.py", line 23, in create_request
+    return self.member_dao.create_request(reim)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\member_dao_impl.py", line 37, in create_request
+    cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at end of input
+LINE 2: ...rent saving any information', 0, 1623805430, None, 'None', 1
+                                                                       ^
+
+2021-06-15 21:05:49,066 INFO 127.0.0.1 - - [15/Jun/2021 21:05:49] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 500 -
+2021-06-15 21:08:21,989 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 21:08:30,258 ERROR Exception on /bugCatch/member/1/create [POST]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 101, in create_request
+    member_service.create_request(new_request)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\member_service_impl.py", line 23, in create_request
+    return self.member_dao.create_request(reim)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\member_dao_impl.py", line 36, in create_request
+    cursor.execute(sql)
+psycopg2.errors.SyntaxError: syntax error at end of input
+LINE 2: ...emented but werent saving any information', 0, 1623805430, 1
+                                                                       ^
+
+2021-06-15 21:08:30,262 INFO 127.0.0.1 - - [15/Jun/2021 21:08:30] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 500 -
+2021-06-15 21:10:24,482 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-15 21:10:28,264 INFO 127.0.0.1 - - [15/Jun/2021 21:10:28] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 201 -
