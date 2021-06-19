@@ -312,3 +312,342 @@ LINE 2: ...emented but werent saving any information', 0, 1623805430, 1
 2021-06-15 21:08:30,262 INFO 127.0.0.1 - - [15/Jun/2021 21:08:30] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 500 -
 2021-06-15 21:10:24,482 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 2021-06-15 21:10:28,264 INFO 127.0.0.1 - - [15/Jun/2021 21:10:28] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 201 -
+2021-06-17 20:49:17,161 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-17 20:49:23,535 INFO 127.0.0.1 - - [17/Jun/2021 20:49:23] "GET /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:01:29,193 ERROR Exception on /bugCatch/login [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 46, in login
+    user_name = body["userName"]
+TypeError: 'NoneType' object is not subscriptable
+2021-06-17 21:01:29,255 INFO 127.0.0.1 - - [17/Jun/2021 21:01:29] "[35m[1mGET /bugCatch/login?userName=realrocky46&password=jkcbn43857qo HTTP/1.1[0m" 500 -
+2021-06-17 21:08:51,578 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-17 21:08:59,969 ERROR Exception on /bugCatch/login [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 49, in login
+    user_name = body["userName"]
+TypeError: 'NoneType' object is not subscriptable
+2021-06-17 21:08:59,969 INFO 127.0.0.1 - - [17/Jun/2021 21:08:59] "[35m[1mGET /bugCatch/login?userName=realrocky46&password=jkcbn43857qo HTTP/1.1[0m" 500 -
+2021-06-17 21:09:09,919 ERROR Exception on /bugCatch/login [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 49, in login
+    user_name = body["userName"]
+TypeError: 'NoneType' object is not subscriptable
+2021-06-17 21:09:09,919 INFO 127.0.0.1 - - [17/Jun/2021 21:09:09] "[35m[1mGET /bugCatch/login?userName=realrocky46&password=jkcbn43857qo HTTP/1.1[0m" 500 -
+2021-06-17 21:12:34,121 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-17 21:12:43,678 INFO 127.0.0.1 - - [17/Jun/2021 21:12:43] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:12:50,572 INFO 127.0.0.1 - - [17/Jun/2021 21:12:50] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:13:00,722 INFO 127.0.0.1 - - [17/Jun/2021 21:13:00] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:13:08,102 INFO 127.0.0.1 - - [17/Jun/2021 21:13:08] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:14:14,022 INFO 127.0.0.1 - - [17/Jun/2021 21:14:14] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:14:14,113 INFO 127.0.0.1 - - [17/Jun/2021 21:14:14] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:23:32,060 INFO 127.0.0.1 - - [17/Jun/2021 21:23:32] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-17 21:23:32,150 INFO 127.0.0.1 - - [17/Jun/2021 21:23:32] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:10:51,844 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 14:10:59,527 INFO 127.0.0.1 - - [18/Jun/2021 14:10:59] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:10:59,669 INFO 127.0.0.1 - - [18/Jun/2021 14:10:59] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:18:16,306 INFO 127.0.0.1 - - [18/Jun/2021 14:18:16] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:18:16,389 INFO 127.0.0.1 - - [18/Jun/2021 14:18:16] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:18:35,827 INFO 127.0.0.1 - - [18/Jun/2021 14:18:35] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:18:35,876 INFO 127.0.0.1 - - [18/Jun/2021 14:18:35] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:18:50,950 INFO 127.0.0.1 - - [18/Jun/2021 14:18:50] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:18:51,043 INFO 127.0.0.1 - - [18/Jun/2021 14:18:51] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:19:07,954 INFO 127.0.0.1 - - [18/Jun/2021 14:19:07] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:19:08,053 INFO 127.0.0.1 - - [18/Jun/2021 14:19:08] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 14:21:07,633 INFO 127.0.0.1 - - [18/Jun/2021 14:21:07] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:21:07,675 INFO 127.0.0.1 - - [18/Jun/2021 14:21:07] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:23:46,363 INFO 127.0.0.1 - - [18/Jun/2021 14:23:46] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:23:46,440 INFO 127.0.0.1 - - [18/Jun/2021 14:23:46] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:25:18,777 INFO 127.0.0.1 - - [18/Jun/2021 14:25:18] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:25:36,324 INFO 127.0.0.1 - - [18/Jun/2021 14:25:36] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:26:20,170 INFO 127.0.0.1 - - [18/Jun/2021 14:26:20] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:26:20,253 INFO 127.0.0.1 - - [18/Jun/2021 14:26:20] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 14:26:39,732 INFO 127.0.0.1 - - [18/Jun/2021 14:26:39] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:26:39,772 INFO 127.0.0.1 - - [18/Jun/2021 14:26:39] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:33:13,756 INFO 127.0.0.1 - - [18/Jun/2021 14:33:13] "[33mGET /books HTTP/1.1[0m" 404 -
+2021-06-18 14:48:23,947 INFO 127.0.0.1 - - [18/Jun/2021 14:48:23] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 14:53:42,133 INFO 127.0.0.1 - - [18/Jun/2021 14:53:42] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:53:42,199 INFO 127.0.0.1 - - [18/Jun/2021 14:53:42] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 14:53:42,249 INFO 127.0.0.1 - - [18/Jun/2021 14:53:42] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 15:00:14,672 INFO 127.0.0.1 - - [18/Jun/2021 15:00:14] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:00:14,765 INFO 127.0.0.1 - - [18/Jun/2021 15:00:14] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:00:14,820 ERROR Exception on /bugCatch/requests/xx [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 73, in requests_by_user
+    request_list = member_service.view_member_requests(mem_id)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\member_service_impl.py", line 17, in view_member_requests
+    return self.member_dao.view_member_requests(member_id)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\member_dao_impl.py", line 21, in view_member_requests
+    cursor.execute(sql)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type integer: "xx"
+LINE 1: select * from reimbursement where mem_id = 'xx' order by rb_...
+                                                   ^
+
+2021-06-18 15:00:14,894 INFO 127.0.0.1 - - [18/Jun/2021 15:00:14] "[35m[1mGET /bugCatch/requests/xx HTTP/1.1[0m" 500 -
+2021-06-18 15:01:02,874 INFO 127.0.0.1 - - [18/Jun/2021 15:01:02] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:01:02,965 INFO 127.0.0.1 - - [18/Jun/2021 15:01:02] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 15:02:07,538 INFO 127.0.0.1 - - [18/Jun/2021 15:02:07] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:02:07,631 INFO 127.0.0.1 - - [18/Jun/2021 15:02:07] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 15:07:38,839 INFO 127.0.0.1 - - [18/Jun/2021 15:07:38] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:07:38,926 INFO 127.0.0.1 - - [18/Jun/2021 15:07:38] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 15:09:38,888 INFO 127.0.0.1 - - [18/Jun/2021 15:09:38] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:09:39,075 INFO 127.0.0.1 - - [18/Jun/2021 15:09:39] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 15:11:20,623 INFO 127.0.0.1 - - [18/Jun/2021 15:11:20] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:11:20,707 INFO 127.0.0.1 - - [18/Jun/2021 15:11:20] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 15:15:45,530 INFO 127.0.0.1 - - [18/Jun/2021 15:15:45] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:15:45,650 INFO 127.0.0.1 - - [18/Jun/2021 15:15:45] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 15:15:53,138 INFO 127.0.0.1 - - [18/Jun/2021 15:15:53] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 15:16:11,803 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 15:16:21,181 INFO 127.0.0.1 - - [18/Jun/2021 15:16:21] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:16:24,914 INFO 127.0.0.1 - - [18/Jun/2021 15:16:24] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:16:24,964 INFO 127.0.0.1 - - [18/Jun/2021 15:16:24] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:16:25,134 INFO 127.0.0.1 - - [18/Jun/2021 15:16:25] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 15:16:43,666 INFO 127.0.0.1 - - [18/Jun/2021 15:16:43] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:16:43,806 INFO 127.0.0.1 - - [18/Jun/2021 15:16:43] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:16:43,866 INFO 127.0.0.1 - - [18/Jun/2021 15:16:43] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 15:19:14,942 INFO 127.0.0.1 - - [18/Jun/2021 15:19:14] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:19:14,992 INFO 127.0.0.1 - - [18/Jun/2021 15:19:14] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:19:15,032 INFO 127.0.0.1 - - [18/Jun/2021 15:19:15] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 15:20:33,440 INFO 127.0.0.1 - - [18/Jun/2021 15:20:33] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:20:33,480 INFO 127.0.0.1 - - [18/Jun/2021 15:20:33] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:20:33,681 INFO 127.0.0.1 - - [18/Jun/2021 15:20:33] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 15:23:00,966 INFO 127.0.0.1 - - [18/Jun/2021 15:23:00] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:23:01,046 INFO 127.0.0.1 - - [18/Jun/2021 15:23:01] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:23:01,096 INFO 127.0.0.1 - - [18/Jun/2021 15:23:01] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:28:00,268 INFO 127.0.0.1 - - [18/Jun/2021 15:28:00] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:28:01,538 INFO 127.0.0.1 - - [18/Jun/2021 15:28:01] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:28:01,588 INFO 127.0.0.1 - - [18/Jun/2021 15:28:01] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:32:40,608 INFO 127.0.0.1 - - [18/Jun/2021 15:32:40] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:32:40,678 INFO 127.0.0.1 - - [18/Jun/2021 15:32:40] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:32:40,728 INFO 127.0.0.1 - - [18/Jun/2021 15:32:40] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:33:53,016 INFO 127.0.0.1 - - [18/Jun/2021 15:33:53] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:33:53,116 INFO 127.0.0.1 - - [18/Jun/2021 15:33:53] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:33:53,155 INFO 127.0.0.1 - - [18/Jun/2021 15:33:53] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:34:03,156 INFO 127.0.0.1 - - [18/Jun/2021 15:34:03] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:34:03,247 INFO 127.0.0.1 - - [18/Jun/2021 15:34:03] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:34:03,287 INFO 127.0.0.1 - - [18/Jun/2021 15:34:03] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:36:40,013 INFO 127.0.0.1 - - [18/Jun/2021 15:36:40] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:36:40,133 INFO 127.0.0.1 - - [18/Jun/2021 15:36:40] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:36:40,183 INFO 127.0.0.1 - - [18/Jun/2021 15:36:40] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:40:16,696 INFO 127.0.0.1 - - [18/Jun/2021 15:40:16] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:40:16,776 INFO 127.0.0.1 - - [18/Jun/2021 15:40:16] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:40:16,816 INFO 127.0.0.1 - - [18/Jun/2021 15:40:16] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:46:30,956 INFO 127.0.0.1 - - [18/Jun/2021 15:46:30] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:46:31,056 INFO 127.0.0.1 - - [18/Jun/2021 15:46:31] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:46:31,136 INFO 127.0.0.1 - - [18/Jun/2021 15:46:31] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 15:47:17,551 INFO 127.0.0.1 - - [18/Jun/2021 15:47:17] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:47:17,601 INFO 127.0.0.1 - - [18/Jun/2021 15:47:17] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:47:17,777 INFO 127.0.0.1 - - [18/Jun/2021 15:47:17] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 15:53:46,312 INFO 127.0.0.1 - - [18/Jun/2021 15:53:46] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:53:46,362 INFO 127.0.0.1 - - [18/Jun/2021 15:53:46] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 15:53:46,563 INFO 127.0.0.1 - - [18/Jun/2021 15:53:46] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:06:23,348 INFO 127.0.0.1 - - [18/Jun/2021 16:06:23] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:06:23,402 INFO 127.0.0.1 - - [18/Jun/2021 16:06:23] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:06:23,471 INFO 127.0.0.1 - - [18/Jun/2021 16:06:23] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:07:30,789 INFO 127.0.0.1 - - [18/Jun/2021 16:07:30] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:07:30,836 INFO 127.0.0.1 - - [18/Jun/2021 16:07:30] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:07:31,051 INFO 127.0.0.1 - - [18/Jun/2021 16:07:31] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:24:35,715 INFO 127.0.0.1 - - [18/Jun/2021 16:24:35] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:24:35,815 INFO 127.0.0.1 - - [18/Jun/2021 16:24:35] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:24:35,878 INFO 127.0.0.1 - - [18/Jun/2021 16:24:35] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:25:42,788 INFO 127.0.0.1 - - [18/Jun/2021 16:25:42] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:25:42,842 INFO 127.0.0.1 - - [18/Jun/2021 16:25:42] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:25:42,904 INFO 127.0.0.1 - - [18/Jun/2021 16:25:42] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:27:01,752 INFO 127.0.0.1 - - [18/Jun/2021 16:27:01] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:27:01,799 INFO 127.0.0.1 - - [18/Jun/2021 16:27:01] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:27:01,884 INFO 127.0.0.1 - - [18/Jun/2021 16:27:01] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:32:54,137 INFO 127.0.0.1 - - [18/Jun/2021 16:32:54] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:32:54,222 INFO 127.0.0.1 - - [18/Jun/2021 16:32:54] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:32:54,275 INFO 127.0.0.1 - - [18/Jun/2021 16:32:54] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:35:26,899 INFO 127.0.0.1 - - [18/Jun/2021 16:35:26] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:35:26,946 INFO 127.0.0.1 - - [18/Jun/2021 16:35:26] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:35:26,999 INFO 127.0.0.1 - - [18/Jun/2021 16:35:26] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 16:40:22,951 INFO 127.0.0.1 - - [18/Jun/2021 16:40:22] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:40:23,459 INFO 127.0.0.1 - - [18/Jun/2021 16:40:23] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:42:33,355 INFO 127.0.0.1 - - [18/Jun/2021 16:42:33] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:42:33,424 INFO 127.0.0.1 - - [18/Jun/2021 16:42:33] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:44:11,027 INFO 127.0.0.1 - - [18/Jun/2021 16:44:11] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:44:11,159 INFO 127.0.0.1 - - [18/Jun/2021 16:44:11] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:44:28,753 INFO 127.0.0.1 - - [18/Jun/2021 16:44:28] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 16:44:28,807 INFO 127.0.0.1 - - [18/Jun/2021 16:44:28] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:00:15,075 INFO 127.0.0.1 - - [18/Jun/2021 17:00:15] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:00:15,122 INFO 127.0.0.1 - - [18/Jun/2021 17:00:15] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:03:14,142 INFO 127.0.0.1 - - [18/Jun/2021 17:03:14] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:03:14,274 INFO 127.0.0.1 - - [18/Jun/2021 17:03:14] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:03:14,312 INFO 127.0.0.1 - - [18/Jun/2021 17:03:14] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 17:04:31,971 INFO 127.0.0.1 - - [18/Jun/2021 17:04:31] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:04:32,056 INFO 127.0.0.1 - - [18/Jun/2021 17:04:32] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:04:32,109 INFO 127.0.0.1 - - [18/Jun/2021 17:04:32] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 17:06:30,471 INFO 127.0.0.1 - - [18/Jun/2021 17:06:30] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:06:30,571 INFO 127.0.0.1 - - [18/Jun/2021 17:06:30] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:07:41,485 INFO 127.0.0.1 - - [18/Jun/2021 17:07:41] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:07:41,586 INFO 127.0.0.1 - - [18/Jun/2021 17:07:41] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:07:41,633 INFO 127.0.0.1 - - [18/Jun/2021 17:07:41] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 17:07:59,467 INFO 127.0.0.1 - - [18/Jun/2021 17:07:59] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:07:59,606 INFO 127.0.0.1 - - [18/Jun/2021 17:07:59] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:07:59,668 INFO 127.0.0.1 - - [18/Jun/2021 17:07:59] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 17:08:58,784 INFO 127.0.0.1 - - [18/Jun/2021 17:08:58] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:08:58,838 INFO 127.0.0.1 - - [18/Jun/2021 17:08:58] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:08:59,001 INFO 127.0.0.1 - - [18/Jun/2021 17:08:59] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 17:09:13,776 INFO 127.0.0.1 - - [18/Jun/2021 17:09:13] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:09:13,955 INFO 127.0.0.1 - - [18/Jun/2021 17:09:13] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:09:14,008 INFO 127.0.0.1 - - [18/Jun/2021 17:09:14] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 17:20:02,628 INFO 127.0.0.1 - - [18/Jun/2021 17:20:02] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:20:02,675 INFO 127.0.0.1 - - [18/Jun/2021 17:20:02] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:20:02,888 INFO 127.0.0.1 - - [18/Jun/2021 17:20:02] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 17:22:43,411 INFO 127.0.0.1 - - [18/Jun/2021 17:22:43] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:22:43,458 INFO 127.0.0.1 - - [18/Jun/2021 17:22:43] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:22:43,659 INFO 127.0.0.1 - - [18/Jun/2021 17:22:43] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 17:24:23,540 INFO 127.0.0.1 - - [18/Jun/2021 17:24:23] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:24:23,578 INFO 127.0.0.1 - - [18/Jun/2021 17:24:23] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:24:23,641 INFO 127.0.0.1 - - [18/Jun/2021 17:24:23] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 17:24:55,579 INFO 127.0.0.1 - - [18/Jun/2021 17:24:55] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:24:55,626 INFO 127.0.0.1 - - [18/Jun/2021 17:24:55] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:24:55,749 INFO 127.0.0.1 - - [18/Jun/2021 17:24:55] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 17:35:01,119 INFO 127.0.0.1 - - [18/Jun/2021 17:35:01] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:35:01,204 INFO 127.0.0.1 - - [18/Jun/2021 17:35:01] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:35:01,251 INFO 127.0.0.1 - - [18/Jun/2021 17:35:01] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 17:35:42,240 INFO 127.0.0.1 - - [18/Jun/2021 17:35:42] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:35:42,363 INFO 127.0.0.1 - - [18/Jun/2021 17:35:42] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 17:35:42,410 INFO 127.0.0.1 - - [18/Jun/2021 17:35:42] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 19:34:18,158 INFO 127.0.0.1 - - [18/Jun/2021 19:34:18] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:34:18,296 INFO 127.0.0.1 - - [18/Jun/2021 19:34:18] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:34:18,343 INFO 127.0.0.1 - - [18/Jun/2021 19:34:18] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 19:35:19,655 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 19:35:23,315 INFO 127.0.0.1 - - [18/Jun/2021 19:35:23] "OPTIONS /bugCatch/member/1/create HTTP/1.1" 200 -
+2021-06-18 19:35:23,393 INFO 127.0.0.1 - - [18/Jun/2021 19:35:23] "[31m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 422 -
+2021-06-18 19:37:42,198 INFO 127.0.0.1 - - [18/Jun/2021 19:37:42] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:37:42,314 INFO 127.0.0.1 - - [18/Jun/2021 19:37:42] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:37:42,376 INFO 127.0.0.1 - - [18/Jun/2021 19:37:42] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 19:38:00,254 INFO 127.0.0.1 - - [18/Jun/2021 19:38:00] "OPTIONS /bugCatch/member/1/create HTTP/1.1" 200 -
+2021-06-18 19:38:00,377 INFO 127.0.0.1 - - [18/Jun/2021 19:38:00] "[31m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 422 -
+2021-06-18 19:38:26,880 INFO 127.0.0.1 - - [18/Jun/2021 19:38:26] "[31m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 422 -
+2021-06-18 19:39:57,342 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 19:40:01,487 INFO 127.0.0.1 - - [18/Jun/2021 19:40:01] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 201 -
+2021-06-18 19:40:16,358 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 19:40:46,195 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 19:40:51,225 INFO 127.0.0.1 - - [18/Jun/2021 19:40:51] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 201 -
+2021-06-18 19:41:07,449 INFO 127.0.0.1 - - [18/Jun/2021 19:41:07] "OPTIONS /bugCatch/member/1/create HTTP/1.1" 200 -
+2021-06-18 19:41:07,596 INFO 127.0.0.1 - - [18/Jun/2021 19:41:07] "[31m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 422 -
+2021-06-18 19:44:00,501 INFO 127.0.0.1 - - [18/Jun/2021 19:44:00] "OPTIONS /bugCatch/member/1/create HTTP/1.1" 200 -
+2021-06-18 19:44:00,547 INFO 127.0.0.1 - - [18/Jun/2021 19:44:00] "[31m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 422 -
+2021-06-18 19:45:37,946 INFO 127.0.0.1 - - [18/Jun/2021 19:45:37] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:45:38,047 INFO 127.0.0.1 - - [18/Jun/2021 19:45:38] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 19:46:02,604 INFO 127.0.0.1 - - [18/Jun/2021 19:46:02] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:46:02,720 INFO 127.0.0.1 - - [18/Jun/2021 19:46:02] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 19:46:52,744 INFO 127.0.0.1 - - [18/Jun/2021 19:46:52] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:46:53,130 INFO 127.0.0.1 - - [18/Jun/2021 19:46:53] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 19:47:21,815 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 19:47:43,965 INFO 127.0.0.1 - - [18/Jun/2021 19:47:43] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:47:44,188 INFO 127.0.0.1 - - [18/Jun/2021 19:47:44] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:47:44,250 INFO 127.0.0.1 - - [18/Jun/2021 19:47:44] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 19:48:12,926 INFO 127.0.0.1 - - [18/Jun/2021 19:48:12] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:48:13,010 INFO 127.0.0.1 - - [18/Jun/2021 19:48:13] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:48:13,057 INFO 127.0.0.1 - - [18/Jun/2021 19:48:13] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 19:48:24,596 INFO 127.0.0.1 - - [18/Jun/2021 19:48:24] "OPTIONS /bugCatch/member/1/create HTTP/1.1" 200 -
+2021-06-18 19:48:24,680 INFO 127.0.0.1 - - [18/Jun/2021 19:48:24] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 201 -
+2021-06-18 19:52:37,773 INFO 127.0.0.1 - - [18/Jun/2021 19:52:37] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:52:37,911 INFO 127.0.0.1 - - [18/Jun/2021 19:52:37] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:52:37,958 INFO 127.0.0.1 - - [18/Jun/2021 19:52:37] "GET /bugCatch/requests/4 HTTP/1.1" 200 -
+2021-06-18 19:52:51,944 INFO 127.0.0.1 - - [18/Jun/2021 19:52:51] "OPTIONS /bugCatch/member/4/create HTTP/1.1" 200 -
+2021-06-18 19:52:52,045 INFO 127.0.0.1 - - [18/Jun/2021 19:52:52] "[35m[1mPOST /bugCatch/member/4/create HTTP/1.1[0m" 201 -
+2021-06-18 19:55:48,894 INFO 127.0.0.1 - - [18/Jun/2021 19:55:48] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:55:49,010 INFO 127.0.0.1 - - [18/Jun/2021 19:55:49] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:55:49,063 INFO 127.0.0.1 - - [18/Jun/2021 19:55:49] "GET /bugCatch/requests/4 HTTP/1.1" 200 -
+2021-06-18 19:55:59,462 INFO 127.0.0.1 - - [18/Jun/2021 19:55:59] "OPTIONS /bugCatch/member/4/create HTTP/1.1" 200 -
+2021-06-18 19:55:59,562 INFO 127.0.0.1 - - [18/Jun/2021 19:55:59] "[35m[1mPOST /bugCatch/member/4/create HTTP/1.1[0m" 201 -
+2021-06-18 19:57:20,315 INFO 127.0.0.1 - - [18/Jun/2021 19:57:20] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:57:20,601 INFO 127.0.0.1 - - [18/Jun/2021 19:57:20] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:57:20,670 INFO 127.0.0.1 - - [18/Jun/2021 19:57:20] "GET /bugCatch/requests/4 HTTP/1.1" 200 -
+2021-06-18 19:57:28,374 INFO 127.0.0.1 - - [18/Jun/2021 19:57:28] "OPTIONS /bugCatch/member/4/create HTTP/1.1" 200 -
+2021-06-18 19:57:28,475 INFO 127.0.0.1 - - [18/Jun/2021 19:57:28] "[35m[1mPOST /bugCatch/member/4/create HTTP/1.1[0m" 201 -
+2021-06-18 19:58:29,737 INFO 127.0.0.1 - - [18/Jun/2021 19:58:29] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:58:29,860 INFO 127.0.0.1 - - [18/Jun/2021 19:58:29] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 19:58:29,923 INFO 127.0.0.1 - - [18/Jun/2021 19:58:29] "GET /bugCatch/requests/4 HTTP/1.1" 200 -
+2021-06-18 19:58:36,475 INFO 127.0.0.1 - - [18/Jun/2021 19:58:36] "OPTIONS /bugCatch/member/4/create HTTP/1.1" 200 -
+2021-06-18 19:58:36,629 INFO 127.0.0.1 - - [18/Jun/2021 19:58:36] "[35m[1mPOST /bugCatch/member/4/create HTTP/1.1[0m" 201 -
+2021-06-18 20:04:08,187 INFO 127.0.0.1 - - [18/Jun/2021 20:04:08] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:04:08,319 INFO 127.0.0.1 - - [18/Jun/2021 20:04:08] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:04:08,372 INFO 127.0.0.1 - - [18/Jun/2021 20:04:08] "GET /bugCatch/requests/4 HTTP/1.1" 200 -
+2021-06-18 20:04:19,267 INFO 127.0.0.1 - - [18/Jun/2021 20:04:19] "OPTIONS /bugCatch/member/4/create HTTP/1.1" 200 -
+2021-06-18 20:04:19,352 INFO 127.0.0.1 - - [18/Jun/2021 20:04:19] "[35m[1mPOST /bugCatch/member/4/create HTTP/1.1[0m" 201 -
+2021-06-18 20:09:56,186 INFO 127.0.0.1 - - [18/Jun/2021 20:09:56] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:09:56,309 INFO 127.0.0.1 - - [18/Jun/2021 20:09:56] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:09:56,356 INFO 127.0.0.1 - - [18/Jun/2021 20:09:56] "GET /bugCatch/requests/4 HTTP/1.1" 200 -
+2021-06-18 20:10:06,189 INFO 127.0.0.1 - - [18/Jun/2021 20:10:06] "OPTIONS /bugCatch/member/4/create HTTP/1.1" 200 -
+2021-06-18 20:10:06,274 INFO 127.0.0.1 - - [18/Jun/2021 20:10:06] "[35m[1mPOST /bugCatch/member/4/create HTTP/1.1[0m" 201 -
+2021-06-18 20:28:05,918 INFO 127.0.0.1 - - [18/Jun/2021 20:28:05] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:28:05,987 INFO 127.0.0.1 - - [18/Jun/2021 20:28:05] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:28:06,040 INFO 127.0.0.1 - - [18/Jun/2021 20:28:06] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 20:28:35,719 INFO 127.0.0.1 - - [18/Jun/2021 20:28:35] "OPTIONS /bugCatch/member/4/reim/[object%20Object]/judge HTTP/1.1" 200 -
+2021-06-18 20:28:35,841 INFO 127.0.0.1 - - [18/Jun/2021 20:28:35] "[31m[1mPATCH /bugCatch/member/4/reim/[object%20Object]/judge HTTP/1.1[0m" 422 -
+2021-06-18 20:30:03,257 INFO 127.0.0.1 - - [18/Jun/2021 20:30:03] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:30:03,351 INFO 127.0.0.1 - - [18/Jun/2021 20:30:03] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 20:30:13,743 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 20:30:17,444 INFO 127.0.0.1 - - [18/Jun/2021 20:30:17] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:30:17,629 INFO 127.0.0.1 - - [18/Jun/2021 20:30:17] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:30:17,729 INFO 127.0.0.1 - - [18/Jun/2021 20:30:17] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 20:30:27,237 INFO 127.0.0.1 - - [18/Jun/2021 20:30:27] "OPTIONS /bugCatch/member/4/reim/[object%20Object]/judge HTTP/1.1" 200 -
+2021-06-18 20:30:27,290 INFO 127.0.0.1 - - [18/Jun/2021 20:30:27] "[31m[1mPATCH /bugCatch/member/4/reim/[object%20Object]/judge HTTP/1.1[0m" 422 -
+2021-06-18 20:32:52,806 INFO 127.0.0.1 - - [18/Jun/2021 20:32:52] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:32:52,953 INFO 127.0.0.1 - - [18/Jun/2021 20:32:52] "[33mPOST /bugCatch/login HTTP/1.1[0m" 404 -
+2021-06-18 20:33:00,987 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 20:33:03,225 INFO 127.0.0.1 - - [18/Jun/2021 20:33:03] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:33:03,394 INFO 127.0.0.1 - - [18/Jun/2021 20:33:03] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 20:33:03,441 INFO 127.0.0.1 - - [18/Jun/2021 20:33:03] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 20:33:18,917 INFO 127.0.0.1 - - [18/Jun/2021 20:33:18] "OPTIONS /bugCatch/member/4/reim/14/judge HTTP/1.1" 200 -
+2021-06-18 20:33:19,064 INFO 127.0.0.1 - - [18/Jun/2021 20:33:19] "PATCH /bugCatch/member/4/reim/14/judge HTTP/1.1" 200 -
+2021-06-18 21:21:29,901 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-18 21:21:50,632 INFO 127.0.0.1 - - [18/Jun/2021 21:21:50] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:21:50,785 INFO 127.0.0.1 - - [18/Jun/2021 21:21:50] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:21:50,832 INFO 127.0.0.1 - - [18/Jun/2021 21:21:50] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 21:22:55,795 INFO 127.0.0.1 - - [18/Jun/2021 21:22:55] "OPTIONS /bugCatch/member/1/create HTTP/1.1" 200 -
+2021-06-18 21:22:55,965 INFO 127.0.0.1 - - [18/Jun/2021 21:22:55] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 201 -
+2021-06-18 21:23:06,961 INFO 127.0.0.1 - - [18/Jun/2021 21:23:06] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:23:07,377 INFO 127.0.0.1 - - [18/Jun/2021 21:23:07] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:23:07,431 INFO 127.0.0.1 - - [18/Jun/2021 21:23:07] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-18 21:23:25,850 INFO 127.0.0.1 - - [18/Jun/2021 21:23:25] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:23:25,881 INFO 127.0.0.1 - - [18/Jun/2021 21:23:25] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:23:26,082 INFO 127.0.0.1 - - [18/Jun/2021 21:23:26] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-18 21:24:11,069 INFO 127.0.0.1 - - [18/Jun/2021 21:24:11] "OPTIONS /bugCatch/member/1/reim/15/judge HTTP/1.1" 200 -
+2021-06-18 21:24:11,216 INFO 127.0.0.1 - - [18/Jun/2021 21:24:11] "PATCH /bugCatch/member/1/reim/15/judge HTTP/1.1" 200 -
+2021-06-18 21:24:25,160 INFO 127.0.0.1 - - [18/Jun/2021 21:24:25] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:24:25,276 INFO 127.0.0.1 - - [18/Jun/2021 21:24:25] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-18 21:24:25,339 INFO 127.0.0.1 - - [18/Jun/2021 21:24:25] "GET /bugCatch/requests/1 HTTP/1.1" 200 -

@@ -17,7 +17,7 @@ class MemberDaoImpl(MemberDao):
 
     def view_member_requests(self, member_id: int) -> List[Reimbursement]:
         cursor = connection.cursor()
-        sql = """select * from reimbursement where mem_id = '{}' order by rb_date;""".format(member_id)
+        sql = """select * from reimbursement where mem_id = '{}' order by rb_id desc;""".format(member_id)
         cursor.execute(sql)
         records = cursor.fetchall()
         request_list = []

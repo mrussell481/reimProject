@@ -17,7 +17,7 @@ class ManagerDaoImpl(ManagerDao):
 
     def view_all_requests(self) -> List[Reimbursement]:
         cursor = connection.cursor()
-        sql = """select * from reimbursement order by rb_date;"""
+        sql = """select * from reimbursement order by rb_id desc;"""
         cursor.execute(sql)
         records = cursor.fetchall()
         request_list = []

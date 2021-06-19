@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, render_template
+from flask_cors import CORS
 import logging
 from services.manager_service_impl import ManagerServiceImpl
 from services.member_service_impl import MemberServiceImpl
@@ -9,7 +10,9 @@ from entities.manager import Manager
 from entities.reimbursement import Reimbursement
 from exceptions.user_not_found import UserNotFound
 
+
 app: Flask = Flask(__name__)
+CORS(app)
 logging.basicConfig(filename="records.log", level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(message)s')
 
 
@@ -40,7 +43,7 @@ def main_page():
 # and then returns a list of requests depending on whether the user is an member or manager.
 # The front-end will use the info to verify the login and determine which page to show.
 # Should return a list with the user object and whether they're a member or manager.
-@app.route("/bugCatch/login", methods=["GET"])
+@app.route("/bugCatch/login", methods=["POST"])
 def login():
     body = request.json
     user_name = body["userName"]
