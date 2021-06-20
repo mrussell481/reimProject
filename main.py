@@ -70,9 +70,12 @@ def requests():
 # A second call if the user is a member. Returns only requests belonging to them.
 @app.route("/bugCatch/requests/<mem_id>", methods=["GET"])
 def requests_by_user(mem_id: int):
-    request_list = member_service.view_member_requests(mem_id)
-    json_list = [l.as_json_dict() for l in request_list]
-    return jsonify(json_list), 200
+        request_list = member_service.view_member_requests(mem_id)
+        json_list = [l.as_json_dict() for l in request_list]
+        if json_list:
+            return jsonify(json_list), 200
+        else:
+            return "Member could not be found.", 404
 
 
 # Returns a specific reimbursement.
