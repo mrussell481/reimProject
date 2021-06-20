@@ -40,4 +40,75 @@ class ManagerDaoImpl(ManagerDao):
         return "Successfully updated approval status."
 
     def statistics(self) -> list:
-        pass
+
+        # The values in stats_list are as follows:
+        # 1. Member who made the most off of reimbursements
+        # 2. How much that member made
+        # 3. Member who made the most requests
+        # 4. Number of requests they made
+        # 5. Total number of requests
+        # 6. Total amount of money made by members
+        # 7. Approval Rate
+        # 8. Average number of Requests per member
+        # 9. Number of approved requests (used for the pie chart)
+        stats_list = []
+
+        # Step 1 and 2
+        cursor = connection.cursor()
+        sql = """select sender, sum(amount) from reimbursement group by sender;"""
+        cursor.execute(sql)
+        records = cursor.fetchall()
+        richest_member_list = []
+        for record in records:
+            richest_member_list.append(record)
+        richest_member_name = ""
+        richest_member_amount = 0
+        for record in richest_member_list:
+            if record[1] > richest_member_amount:
+                richest_member_amount = record[1]
+                richest_member_name = record[0]
+        stats_list.append(richest_member_name)
+        stats_list.append(richest_member_amount)
+
+        # Step 3 and 4
+        sql = """SELECT sender, count(*)
+                    FROM reimbursement
+                    GROUP BY sender
+                    order by count desc;"""
+        cursor.execute(sql)
+        requesting_member_record = cursor.fetchone()
+        requesting_member = []
+        for record in requesting_member_record:
+            requesting_member.append(record)
+        stats_list.append(requesting_member[0])
+        stats_list.append(requesting_member[1])
+
+        # Step 5
+        sql = """select count(*) from reimbursement;"""
+        cursor.execute(sql)
+        request_count = cursor.fetchone()
+        request_total = request_count[0]
+        stats_list.append(request_count[0])
+
+        # Step 6
+        sql = """select sum(amount) from reimbursement;"""
+        cursor.execute(sql)
+        reim_amount = cursor.fetchone()
+        stats_list.append(reim_amount[0])
+
+        # Step 7
+        sql = """select count(approved) from reimbursement where approved = true;"""
+        cursor.execute(sql)
+        accept_rate = cursor.fetchone()
+        stats_list.append(round((accept_rate[0] / request_total)*100, 3))
+
+        # Step 8
+        sql = """select count(*) from site_member;"""
+        cursor.execute(sql)
+        member_count = cursor.fetchone()
+        stats_list.append(round((request_total / member_count[0]), 3))
+
+        # Step 9
+        stats_list.append(accept_rate[0])
+
+        return stats_list

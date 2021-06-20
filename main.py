@@ -123,9 +123,11 @@ def judge_request(mem_id: int, reim_id: int):
 
 # Returns a list of numbers that represent various statistics about the requests
 # made in the database.
-@app.route("/bugCatch/manager/<man_id>/stats", methods=["GET"])
+@app.route("/bugCatch/stats", methods=["GET"])
 def stats():
-    pass
+    #stats_list = []
+    stats_list = manager_service.statistics()
+    return jsonify(stats_list), 200
 
 
 if __name__ == '__main__':

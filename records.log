@@ -651,3 +651,1163 @@ LINE 1: select * from reimbursement where mem_id = 'xx' order by rb_...
 2021-06-18 21:24:25,160 INFO 127.0.0.1 - - [18/Jun/2021 21:24:25] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
 2021-06-18 21:24:25,276 INFO 127.0.0.1 - - [18/Jun/2021 21:24:25] "POST /bugCatch/login HTTP/1.1" 200 -
 2021-06-18 21:24:25,339 INFO 127.0.0.1 - - [18/Jun/2021 21:24:25] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-19 12:27:49,286 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 12:28:09,863 INFO 127.0.0.1 - - [19/Jun/2021 12:28:09] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 12:28:09,959 INFO 127.0.0.1 - - [19/Jun/2021 12:28:09] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 12:28:10,004 INFO 127.0.0.1 - - [19/Jun/2021 12:28:10] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 12:28:49,339 INFO 127.0.0.1 - - [19/Jun/2021 12:28:49] "OPTIONS /bugCatch/member/4/reim/13/judge HTTP/1.1" 200 -
+2021-06-19 12:28:49,488 INFO 127.0.0.1 - - [19/Jun/2021 12:28:49] "PATCH /bugCatch/member/4/reim/13/judge HTTP/1.1" 200 -
+2021-06-19 12:29:49,012 INFO 127.0.0.1 - - [19/Jun/2021 12:29:49] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 12:29:49,124 INFO 127.0.0.1 - - [19/Jun/2021 12:29:49] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 12:29:49,164 INFO 127.0.0.1 - - [19/Jun/2021 12:29:49] "GET /bugCatch/requests/1 HTTP/1.1" 200 -
+2021-06-19 12:31:25,394 INFO 127.0.0.1 - - [19/Jun/2021 12:31:25] "OPTIONS /bugCatch/member/1/create HTTP/1.1" 200 -
+2021-06-19 12:31:25,475 INFO 127.0.0.1 - - [19/Jun/2021 12:31:25] "[35m[1mPOST /bugCatch/member/1/create HTTP/1.1[0m" 201 -
+2021-06-19 13:32:05,252 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:32:05,547 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:32:05,652 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:32:05,692 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,697 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,699 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,700 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,702 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,704 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,705 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,707 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,708 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,710 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,711 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,713 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,714 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,715 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:05,756 INFO 127.0.0.1 - - [19/Jun/2021 13:32:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:32:58,094 INFO 127.0.0.1 - - [19/Jun/2021 13:32:58] "[33mGET /bugCatch/stats HTTP/1.1[0m" 404 -
+2021-06-19 13:33:38,472 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:33:42,929 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 56, in statistics
+    if record > richest_member_amount:
+TypeError: '>' not supported between instances of 'tuple' and 'int'
+2021-06-19 13:33:42,997 INFO 127.0.0.1 - - [19/Jun/2021 13:33:42] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:34:16,106 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:34:19,393 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 56, in statistics
+    if int(record) > richest_member_amount:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 13:34:19,397 INFO 127.0.0.1 - - [19/Jun/2021 13:34:19] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:35:20,643 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:35:24,408 INFO 127.0.0.1 - - [19/Jun/2021 13:35:24] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:37:23,504 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:37:25,363 INFO 127.0.0.1 - - [19/Jun/2021 13:37:25] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:38:51,495 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:38:55,481 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 56, in statistics
+    if int(record) > richest_member_amount:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 13:38:55,485 INFO 127.0.0.1 - - [19/Jun/2021 13:38:55] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:40:28,695 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:40:32,557 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if int(record) > richest_member_amount:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 13:40:32,560 INFO 127.0.0.1 - - [19/Jun/2021 13:40:32] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:40:42,910 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if int(record) > richest_member_amount:
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 13:40:42,911 INFO 127.0.0.1 - - [19/Jun/2021 13:40:42] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:41:59,881 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:42:02,927 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record > richest_member_amount:
+TypeError: '>' not supported between instances of 'tuple' and 'int'
+2021-06-19 13:42:02,932 INFO 127.0.0.1 - - [19/Jun/2021 13:42:02] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:42:07,356 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:42:10,262 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record > richest_member_amount:
+TypeError: '>' not supported between instances of 'tuple' and 'int'
+2021-06-19 13:42:10,267 INFO 127.0.0.1 - - [19/Jun/2021 13:42:10] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:43:04,852 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:43:07,383 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 55, in statistics
+    richest_member_list.append(int(record))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 13:43:07,388 INFO 127.0.0.1 - - [19/Jun/2021 13:43:07] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:43:42,596 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:43:46,127 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 55, in statistics
+    richest_member_list.append(int(record))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 13:43:46,131 INFO 127.0.0.1 - - [19/Jun/2021 13:43:46] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:44:02,158 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 55, in statistics
+    richest_member_list.append(int(record))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 13:44:02,159 INFO 127.0.0.1 - - [19/Jun/2021 13:44:02] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 13:44:48,203 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:44:51,609 INFO 127.0.0.1 - - [19/Jun/2021 13:44:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:45:41,709 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 13:45:44,337 INFO 127.0.0.1 - - [19/Jun/2021 13:45:44] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:46:04,021 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:46:04,071 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:46:04,141 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:46:04,201 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,206 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,208 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,210 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,211 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,213 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,214 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,216 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,217 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,219 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,220 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,222 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,223 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,225 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:46:04,226 INFO 127.0.0.1 - - [19/Jun/2021 13:46:04] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:55,843 INFO 127.0.0.1 - - [19/Jun/2021 13:47:55] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:47:55,983 INFO 127.0.0.1 - - [19/Jun/2021 13:47:55] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:47:56,030 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:47:56,063 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,068 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,070 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,072 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,074 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,075 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,077 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,079 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,081 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,083 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,085 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,086 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,088 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,089 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:47:56,091 INFO 127.0.0.1 - - [19/Jun/2021 13:47:56] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:04,969 INFO 127.0.0.1 - - [19/Jun/2021 13:52:04] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:52:05,040 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:52:05,090 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:52:05,125 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,127 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,128 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,130 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,132 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,133 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,135 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,137 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,138 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,140 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,142 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,143 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,145 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,147 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:52:05,148 INFO 127.0.0.1 - - [19/Jun/2021 13:52:05] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,144 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:54:19,374 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:54:19,434 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:54:19,467 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,468 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,469 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,471 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,473 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,475 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,477 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,478 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,480 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,482 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,484 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,485 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,487 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,488 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:54:19,490 INFO 127.0.0.1 - - [19/Jun/2021 13:54:19] "[33mGET /stats HTTP/1.1[0m" 404 -
+2021-06-19 13:55:05,919 INFO 127.0.0.1 - - [19/Jun/2021 13:55:05] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:55:05,969 INFO 127.0.0.1 - - [19/Jun/2021 13:55:05] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:55:06,194 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:55:06,486 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,486 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,488 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,489 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,491 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,492 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,733 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,734 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,736 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,738 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,740 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,743 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,862 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,863 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:06,865 INFO 127.0.0.1 - - [19/Jun/2021 13:55:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:48,003 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:55:48,053 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:55:48,103 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:55:48,912 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:48,913 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:48,915 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:48,916 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:48,917 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:48,919 INFO 127.0.0.1 - - [19/Jun/2021 13:55:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,363 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,364 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,366 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,367 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,368 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,369 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,518 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,519 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:55:49,521 INFO 127.0.0.1 - - [19/Jun/2021 13:55:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:29,331 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:58:29,376 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:58:29,581 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:58:29,880 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:29,882 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:29,883 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:29,884 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:29,886 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:29,887 INFO 127.0.0.1 - - [19/Jun/2021 13:58:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,131 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,133 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,135 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,137 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,139 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,143 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,277 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,278 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:58:30,280 INFO 127.0.0.1 - - [19/Jun/2021 13:58:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:00,254 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:59:00,304 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:59:00,404 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:59:00,756 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:00,757 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:00,758 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:00,759 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:00,760 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:00,761 INFO 127.0.0.1 - - [19/Jun/2021 13:59:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,014 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,016 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,018 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,019 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,020 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,021 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,165 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,166 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:01,168 INFO 127.0.0.1 - - [19/Jun/2021 13:59:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:28,827 INFO 127.0.0.1 - - [19/Jun/2021 13:59:28] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:59:28,932 INFO 127.0.0.1 - - [19/Jun/2021 13:59:28] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 13:59:29,007 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 13:59:29,625 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,626 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,628 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,630 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,631 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,632 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,877 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,878 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,879 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,880 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,881 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:29,882 INFO 127.0.0.1 - - [19/Jun/2021 13:59:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:30,002 INFO 127.0.0.1 - - [19/Jun/2021 13:59:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:30,004 INFO 127.0.0.1 - - [19/Jun/2021 13:59:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 13:59:30,005 INFO 127.0.0.1 - - [19/Jun/2021 13:59:30] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,192 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:00:18,297 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:00:18,342 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 14:00:18,618 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,619 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,619 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,620 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,621 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,623 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,853 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,854 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,856 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,856 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,857 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,858 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,992 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,993 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:00:18,994 INFO 127.0.0.1 - - [19/Jun/2021 14:00:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:06:39,836 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:06:51,794 INFO 127.0.0.1 - - [19/Jun/2021 14:06:51] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:06:51,904 INFO 127.0.0.1 - - [19/Jun/2021 14:06:51] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:06:51,964 INFO 127.0.0.1 - - [19/Jun/2021 14:06:51] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 14:06:52,650 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,651 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,651 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,652 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,652 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,652 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,658 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,660 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,661 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,662 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,663 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,665 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,950 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,950 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,950 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,950 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,951 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,951 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:52,952 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,953 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,954 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,955 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,956 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:52,957 INFO 127.0.0.1 - - [19/Jun/2021 14:06:52] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:53,109 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:53,110 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:53,110 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:06:53,111 INFO 127.0.0.1 - - [19/Jun/2021 14:06:53] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:53,112 INFO 127.0.0.1 - - [19/Jun/2021 14:06:53] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:06:53,113 INFO 127.0.0.1 - - [19/Jun/2021 14:06:53] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:08:27,519 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:08:32,441 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 59, in statistics
+    if record[1] > richest_member_amount:
+TypeError: 'int' object is not subscriptable
+2021-06-19 14:08:32,444 INFO 127.0.0.1 - - [19/Jun/2021 14:08:32] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:09:05,383 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:09:08,795 INFO 127.0.0.1 - - [19/Jun/2021 14:09:08] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:09:30,391 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:09:32,874 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 55, in statistics
+    richest_member_list.append(*record)
+TypeError: list.append() takes exactly one argument (2 given)
+2021-06-19 14:09:32,879 INFO 127.0.0.1 - - [19/Jun/2021 14:09:32] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:10:28,807 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:10:32,187 INFO 127.0.0.1 - - [19/Jun/2021 14:10:32] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:10:50,749 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:10:52,778 INFO 127.0.0.1 - - [19/Jun/2021 14:10:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,051 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:11:11,101 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:11:11,211 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 14:11:11,573 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,574 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,575 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,576 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,577 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,578 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,816 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,817 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,818 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,819 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,820 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,821 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,936 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,938 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:11:11,939 INFO 127.0.0.1 - - [19/Jun/2021 14:11:11] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:30:27,137 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:30:32,509 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 77, in statistics
+    stats_list.append(requesting_member[1])
+IndexError: list index out of range
+2021-06-19 14:30:32,512 INFO 127.0.0.1 - - [19/Jun/2021 14:30:32] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:32:03,395 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:32:05,906 INFO 127.0.0.1 - - [19/Jun/2021 14:32:05] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:34:59,934 INFO 127.0.0.1 - - [19/Jun/2021 14:34:59] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:34:59,984 INFO 127.0.0.1 - - [19/Jun/2021 14:34:59] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:35:00,044 INFO 127.0.0.1 - - [19/Jun/2021 14:35:00] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 14:35:00,671 INFO 127.0.0.1 - - [19/Jun/2021 14:35:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:00,673 INFO 127.0.0.1 - - [19/Jun/2021 14:35:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:00,674 INFO 127.0.0.1 - - [19/Jun/2021 14:35:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:00,675 INFO 127.0.0.1 - - [19/Jun/2021 14:35:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:00,676 INFO 127.0.0.1 - - [19/Jun/2021 14:35:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:00,677 INFO 127.0.0.1 - - [19/Jun/2021 14:35:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,202 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,203 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,204 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,205 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,206 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,206 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,451 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,452 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:35:01,453 INFO 127.0.0.1 - - [19/Jun/2021 14:35:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:42:47,034 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:42:53,171 INFO 127.0.0.1 - - [19/Jun/2021 14:42:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:43:06,615 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:43:10,155 ERROR Exception on /bugCatch/stats [GET]
+Traceback (most recent call last):
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\main.py", line 129, in stats
+    stats_list = manager_service.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\services\manager_service_impl.py", line 23, in statistics
+    return self.manager_dao.statistics()
+  File "C:\Users\mrmas_d2t5g6y\Desktop\Programming\reimProject\daos\manager_dao_impl.py", line 85, in statistics
+    stats_list.append(int(request_count))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'tuple'
+2021-06-19 14:43:10,159 INFO 127.0.0.1 - - [19/Jun/2021 14:43:10] "[35m[1mGET /bugCatch/stats HTTP/1.1[0m" 500 -
+2021-06-19 14:43:36,828 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:43:39,469 INFO 127.0.0.1 - - [19/Jun/2021 14:43:39] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:17,959 INFO 127.0.0.1 - - [19/Jun/2021 14:45:17] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:45:17,999 INFO 127.0.0.1 - - [19/Jun/2021 14:45:17] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:45:18,130 INFO 127.0.0.1 - - [19/Jun/2021 14:45:18] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 14:45:18,871 INFO 127.0.0.1 - - [19/Jun/2021 14:45:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:18,873 INFO 127.0.0.1 - - [19/Jun/2021 14:45:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:18,874 INFO 127.0.0.1 - - [19/Jun/2021 14:45:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:18,876 INFO 127.0.0.1 - - [19/Jun/2021 14:45:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:18,877 INFO 127.0.0.1 - - [19/Jun/2021 14:45:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:18,878 INFO 127.0.0.1 - - [19/Jun/2021 14:45:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,583 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,584 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,586 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,588 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,590 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,591 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,922 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,923 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:45:19,926 INFO 127.0.0.1 - - [19/Jun/2021 14:45:19] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:49:57,337 INFO 127.0.0.1 - - [19/Jun/2021 14:49:57] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:50:08,190 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:50:10,858 INFO 127.0.0.1 - - [19/Jun/2021 14:50:10] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:51,208 INFO 127.0.0.1 - - [19/Jun/2021 14:52:51] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:52:51,248 INFO 127.0.0.1 - - [19/Jun/2021 14:52:51] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 14:52:51,298 INFO 127.0.0.1 - - [19/Jun/2021 14:52:51] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 14:52:52,248 INFO 127.0.0.1 - - [19/Jun/2021 14:52:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:52,250 INFO 127.0.0.1 - - [19/Jun/2021 14:52:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:52,252 INFO 127.0.0.1 - - [19/Jun/2021 14:52:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:52,253 INFO 127.0.0.1 - - [19/Jun/2021 14:52:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:52,254 INFO 127.0.0.1 - - [19/Jun/2021 14:52:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:52,255 INFO 127.0.0.1 - - [19/Jun/2021 14:52:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,201 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,202 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,204 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,205 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,206 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,207 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,681 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,682 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:52:53,683 INFO 127.0.0.1 - - [19/Jun/2021 14:52:53] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 14:58:54,116 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 14:58:59,322 INFO 127.0.0.1 - - [19/Jun/2021 14:58:59] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:00:10,545 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:00:12,978 INFO 127.0.0.1 - - [19/Jun/2021 15:00:12] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:02:40,050 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:02:43,799 INFO 127.0.0.1 - - [19/Jun/2021 15:02:43] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:03,555 INFO 127.0.0.1 - - [19/Jun/2021 15:04:03] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:04:03,611 INFO 127.0.0.1 - - [19/Jun/2021 15:04:03] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:04:03,665 INFO 127.0.0.1 - - [19/Jun/2021 15:04:03] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 15:04:04,824 INFO 127.0.0.1 - - [19/Jun/2021 15:04:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:04,826 INFO 127.0.0.1 - - [19/Jun/2021 15:04:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:04,827 INFO 127.0.0.1 - - [19/Jun/2021 15:04:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:04,829 INFO 127.0.0.1 - - [19/Jun/2021 15:04:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:04,831 INFO 127.0.0.1 - - [19/Jun/2021 15:04:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:04,833 INFO 127.0.0.1 - - [19/Jun/2021 15:04:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,112 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,113 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,116 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,118 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,120 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,122 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,688 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,689 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:04:06,690 INFO 127.0.0.1 - - [19/Jun/2021 15:04:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:01,322 INFO 127.0.0.1 - - [19/Jun/2021 15:06:01] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:06:01,422 INFO 127.0.0.1 - - [19/Jun/2021 15:06:01] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:06:01,472 INFO 127.0.0.1 - - [19/Jun/2021 15:06:01] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 15:06:02,672 INFO 127.0.0.1 - - [19/Jun/2021 15:06:02] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:02,674 INFO 127.0.0.1 - - [19/Jun/2021 15:06:02] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:02,675 INFO 127.0.0.1 - - [19/Jun/2021 15:06:02] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:02,677 INFO 127.0.0.1 - - [19/Jun/2021 15:06:02] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:02,678 INFO 127.0.0.1 - - [19/Jun/2021 15:06:02] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:02,679 INFO 127.0.0.1 - - [19/Jun/2021 15:06:02] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:03,959 INFO 127.0.0.1 - - [19/Jun/2021 15:06:03] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:03,960 INFO 127.0.0.1 - - [19/Jun/2021 15:06:03] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:03,962 INFO 127.0.0.1 - - [19/Jun/2021 15:06:03] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:03,963 INFO 127.0.0.1 - - [19/Jun/2021 15:06:03] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:03,965 INFO 127.0.0.1 - - [19/Jun/2021 15:06:03] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:03,967 INFO 127.0.0.1 - - [19/Jun/2021 15:06:03] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:04,575 INFO 127.0.0.1 - - [19/Jun/2021 15:06:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:04,576 INFO 127.0.0.1 - - [19/Jun/2021 15:06:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:04,577 INFO 127.0.0.1 - - [19/Jun/2021 15:06:04] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:48,817 INFO 127.0.0.1 - - [19/Jun/2021 15:06:48] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:06:48,867 INFO 127.0.0.1 - - [19/Jun/2021 15:06:48] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:06:48,917 INFO 127.0.0.1 - - [19/Jun/2021 15:06:48] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 15:06:50,600 INFO 127.0.0.1 - - [19/Jun/2021 15:06:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:50,601 INFO 127.0.0.1 - - [19/Jun/2021 15:06:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:50,602 INFO 127.0.0.1 - - [19/Jun/2021 15:06:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:50,603 INFO 127.0.0.1 - - [19/Jun/2021 15:06:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:50,604 INFO 127.0.0.1 - - [19/Jun/2021 15:06:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:50,604 INFO 127.0.0.1 - - [19/Jun/2021 15:06:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:51,769 INFO 127.0.0.1 - - [19/Jun/2021 15:06:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:51,770 INFO 127.0.0.1 - - [19/Jun/2021 15:06:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:51,772 INFO 127.0.0.1 - - [19/Jun/2021 15:06:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:51,773 INFO 127.0.0.1 - - [19/Jun/2021 15:06:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:51,774 INFO 127.0.0.1 - - [19/Jun/2021 15:06:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:51,775 INFO 127.0.0.1 - - [19/Jun/2021 15:06:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:52,339 INFO 127.0.0.1 - - [19/Jun/2021 15:06:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:52,340 INFO 127.0.0.1 - - [19/Jun/2021 15:06:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:06:52,341 INFO 127.0.0.1 - - [19/Jun/2021 15:06:52] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:12:48,097 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:12:59,928 INFO 127.0.0.1 - - [19/Jun/2021 15:12:59] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:13:58,696 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:14:01,199 INFO 127.0.0.1 - - [19/Jun/2021 15:14:01] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:14:24,222 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:14:27,151 INFO 127.0.0.1 - - [19/Jun/2021 15:14:27] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:14:54,970 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:14:58,692 INFO 127.0.0.1 - - [19/Jun/2021 15:14:58] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:53,790 INFO 127.0.0.1 - - [19/Jun/2021 15:16:53] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:16:53,843 INFO 127.0.0.1 - - [19/Jun/2021 15:16:53] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:16:53,890 INFO 127.0.0.1 - - [19/Jun/2021 15:16:53] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 15:16:55,449 INFO 127.0.0.1 - - [19/Jun/2021 15:16:55] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:55,450 INFO 127.0.0.1 - - [19/Jun/2021 15:16:55] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:55,452 INFO 127.0.0.1 - - [19/Jun/2021 15:16:55] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:55,453 INFO 127.0.0.1 - - [19/Jun/2021 15:16:55] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:55,454 INFO 127.0.0.1 - - [19/Jun/2021 15:16:55] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:55,455 INFO 127.0.0.1 - - [19/Jun/2021 15:16:55] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:56,830 INFO 127.0.0.1 - - [19/Jun/2021 15:16:56] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:56,831 INFO 127.0.0.1 - - [19/Jun/2021 15:16:56] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:56,833 INFO 127.0.0.1 - - [19/Jun/2021 15:16:56] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:56,834 INFO 127.0.0.1 - - [19/Jun/2021 15:16:56] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:56,835 INFO 127.0.0.1 - - [19/Jun/2021 15:16:56] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:56,837 INFO 127.0.0.1 - - [19/Jun/2021 15:16:56] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:57,535 INFO 127.0.0.1 - - [19/Jun/2021 15:16:57] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:57,536 INFO 127.0.0.1 - - [19/Jun/2021 15:16:57] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:16:57,537 INFO 127.0.0.1 - - [19/Jun/2021 15:16:57] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:18:01,144 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:18:06,418 INFO 127.0.0.1 - - [19/Jun/2021 15:18:06] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:18:57,036 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 15:19:00,114 INFO 127.0.0.1 - - [19/Jun/2021 15:19:00] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:16,427 INFO 127.0.0.1 - - [19/Jun/2021 15:19:16] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:19:16,574 INFO 127.0.0.1 - - [19/Jun/2021 15:19:16] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:19:16,674 INFO 127.0.0.1 - - [19/Jun/2021 15:19:16] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 15:19:18,442 INFO 127.0.0.1 - - [19/Jun/2021 15:19:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:18,443 INFO 127.0.0.1 - - [19/Jun/2021 15:19:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:18,444 INFO 127.0.0.1 - - [19/Jun/2021 15:19:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:18,445 INFO 127.0.0.1 - - [19/Jun/2021 15:19:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:18,445 INFO 127.0.0.1 - - [19/Jun/2021 15:19:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:18,446 INFO 127.0.0.1 - - [19/Jun/2021 15:19:18] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:20,273 INFO 127.0.0.1 - - [19/Jun/2021 15:19:20] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:20,274 INFO 127.0.0.1 - - [19/Jun/2021 15:19:20] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:20,275 INFO 127.0.0.1 - - [19/Jun/2021 15:19:20] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:20,277 INFO 127.0.0.1 - - [19/Jun/2021 15:19:20] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:20,279 INFO 127.0.0.1 - - [19/Jun/2021 15:19:20] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:20,281 INFO 127.0.0.1 - - [19/Jun/2021 15:19:20] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:21,064 INFO 127.0.0.1 - - [19/Jun/2021 15:19:21] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:21,065 INFO 127.0.0.1 - - [19/Jun/2021 15:19:21] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:21,065 INFO 127.0.0.1 - - [19/Jun/2021 15:19:21] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:46,351 INFO 127.0.0.1 - - [19/Jun/2021 15:19:46] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:19:46,405 INFO 127.0.0.1 - - [19/Jun/2021 15:19:46] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:19:46,521 INFO 127.0.0.1 - - [19/Jun/2021 15:19:46] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 15:19:47,976 INFO 127.0.0.1 - - [19/Jun/2021 15:19:47] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:47,978 INFO 127.0.0.1 - - [19/Jun/2021 15:19:47] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:47,980 INFO 127.0.0.1 - - [19/Jun/2021 15:19:47] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:47,982 INFO 127.0.0.1 - - [19/Jun/2021 15:19:47] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:47,983 INFO 127.0.0.1 - - [19/Jun/2021 15:19:47] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:47,984 INFO 127.0.0.1 - - [19/Jun/2021 15:19:47] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:49,721 INFO 127.0.0.1 - - [19/Jun/2021 15:19:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:49,722 INFO 127.0.0.1 - - [19/Jun/2021 15:19:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:49,724 INFO 127.0.0.1 - - [19/Jun/2021 15:19:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:49,725 INFO 127.0.0.1 - - [19/Jun/2021 15:19:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:49,727 INFO 127.0.0.1 - - [19/Jun/2021 15:19:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:49,728 INFO 127.0.0.1 - - [19/Jun/2021 15:19:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:50,596 INFO 127.0.0.1 - - [19/Jun/2021 15:19:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:50,598 INFO 127.0.0.1 - - [19/Jun/2021 15:19:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:19:50,599 INFO 127.0.0.1 - - [19/Jun/2021 15:19:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:21:43,957 INFO 127.0.0.1 - - [19/Jun/2021 15:21:43] "OPTIONS /bugCatch/member/1/reim/16/judge HTTP/1.1" 200 -
+2021-06-19 15:21:44,088 INFO 127.0.0.1 - - [19/Jun/2021 15:21:44] "PATCH /bugCatch/member/1/reim/16/judge HTTP/1.1" 200 -
+2021-06-19 15:24:45,059 INFO 127.0.0.1 - - [19/Jun/2021 15:24:45] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:24:45,206 INFO 127.0.0.1 - - [19/Jun/2021 15:24:45] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 15:24:45,306 INFO 127.0.0.1 - - [19/Jun/2021 15:24:45] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 15:24:46,944 INFO 127.0.0.1 - - [19/Jun/2021 15:24:46] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:46,944 INFO 127.0.0.1 - - [19/Jun/2021 15:24:46] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:46,945 INFO 127.0.0.1 - - [19/Jun/2021 15:24:46] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:46,946 INFO 127.0.0.1 - - [19/Jun/2021 15:24:46] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:46,947 INFO 127.0.0.1 - - [19/Jun/2021 15:24:46] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:46,948 INFO 127.0.0.1 - - [19/Jun/2021 15:24:46] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:48,665 INFO 127.0.0.1 - - [19/Jun/2021 15:24:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:48,666 INFO 127.0.0.1 - - [19/Jun/2021 15:24:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:48,668 INFO 127.0.0.1 - - [19/Jun/2021 15:24:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:48,670 INFO 127.0.0.1 - - [19/Jun/2021 15:24:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:48,671 INFO 127.0.0.1 - - [19/Jun/2021 15:24:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:48,673 INFO 127.0.0.1 - - [19/Jun/2021 15:24:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:49,516 INFO 127.0.0.1 - - [19/Jun/2021 15:24:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:49,518 INFO 127.0.0.1 - - [19/Jun/2021 15:24:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:24:49,519 INFO 127.0.0.1 - - [19/Jun/2021 15:24:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 15:25:09,017 INFO 127.0.0.1 - - [19/Jun/2021 15:25:09] "OPTIONS /bugCatch/member/4/reim/10/judge HTTP/1.1" 200 -
+2021-06-19 15:25:09,264 INFO 127.0.0.1 - - [19/Jun/2021 15:25:09] "PATCH /bugCatch/member/4/reim/10/judge HTTP/1.1" 200 -
+2021-06-19 19:36:39,053 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 19:36:45,992 INFO 127.0.0.1 - - [19/Jun/2021 19:36:45] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:36:46,124 INFO 127.0.0.1 - - [19/Jun/2021 19:36:46] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:36:46,240 INFO 127.0.0.1 - - [19/Jun/2021 19:36:46] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 19:36:48,016 INFO 127.0.0.1 - - [19/Jun/2021 19:36:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:48,017 INFO 127.0.0.1 - - [19/Jun/2021 19:36:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:48,019 INFO 127.0.0.1 - - [19/Jun/2021 19:36:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:48,020 INFO 127.0.0.1 - - [19/Jun/2021 19:36:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:48,022 INFO 127.0.0.1 - - [19/Jun/2021 19:36:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:48,023 INFO 127.0.0.1 - - [19/Jun/2021 19:36:48] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:49,644 INFO 127.0.0.1 - - [19/Jun/2021 19:36:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:49,646 INFO 127.0.0.1 - - [19/Jun/2021 19:36:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:49,650 INFO 127.0.0.1 - - [19/Jun/2021 19:36:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:49,654 INFO 127.0.0.1 - - [19/Jun/2021 19:36:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:49,660 INFO 127.0.0.1 - - [19/Jun/2021 19:36:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:49,661 INFO 127.0.0.1 - - [19/Jun/2021 19:36:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:50,447 INFO 127.0.0.1 - - [19/Jun/2021 19:36:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:50,448 INFO 127.0.0.1 - - [19/Jun/2021 19:36:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:36:50,448 INFO 127.0.0.1 - - [19/Jun/2021 19:36:50] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:25,950 INFO 127.0.0.1 - - [19/Jun/2021 19:37:25] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:37:25,996 INFO 127.0.0.1 - - [19/Jun/2021 19:37:25] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:37:26,066 INFO 127.0.0.1 - - [19/Jun/2021 19:37:26] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 19:37:27,527 INFO 127.0.0.1 - - [19/Jun/2021 19:37:27] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:27,528 INFO 127.0.0.1 - - [19/Jun/2021 19:37:27] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:27,528 INFO 127.0.0.1 - - [19/Jun/2021 19:37:27] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:27,529 INFO 127.0.0.1 - - [19/Jun/2021 19:37:27] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:27,530 INFO 127.0.0.1 - - [19/Jun/2021 19:37:27] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:27,530 INFO 127.0.0.1 - - [19/Jun/2021 19:37:27] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,068 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,069 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,071 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,072 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,074 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,075 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,777 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,779 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:29,779 INFO 127.0.0.1 - - [19/Jun/2021 19:37:29] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:48,037 INFO 127.0.0.1 - - [19/Jun/2021 19:37:48] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:37:48,090 INFO 127.0.0.1 - - [19/Jun/2021 19:37:48] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:37:48,175 INFO 127.0.0.1 - - [19/Jun/2021 19:37:48] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 19:37:49,619 INFO 127.0.0.1 - - [19/Jun/2021 19:37:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:49,621 INFO 127.0.0.1 - - [19/Jun/2021 19:37:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:49,622 INFO 127.0.0.1 - - [19/Jun/2021 19:37:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:49,623 INFO 127.0.0.1 - - [19/Jun/2021 19:37:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:49,623 INFO 127.0.0.1 - - [19/Jun/2021 19:37:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:49,624 INFO 127.0.0.1 - - [19/Jun/2021 19:37:49] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,031 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,032 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,033 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,034 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,034 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,035 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,724 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,725 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:37:51,726 INFO 127.0.0.1 - - [19/Jun/2021 19:37:51] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:48:03,261 INFO  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-19 19:48:07,634 INFO 127.0.0.1 - - [19/Jun/2021 19:48:07] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:38,490 INFO 127.0.0.1 - - [19/Jun/2021 19:50:38] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:50:38,537 INFO 127.0.0.1 - - [19/Jun/2021 19:50:38] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:50:38,591 INFO 127.0.0.1 - - [19/Jun/2021 19:50:38] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 19:50:40,100 INFO 127.0.0.1 - - [19/Jun/2021 19:50:40] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:40,101 INFO 127.0.0.1 - - [19/Jun/2021 19:50:40] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:40,103 INFO 127.0.0.1 - - [19/Jun/2021 19:50:40] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:40,104 INFO 127.0.0.1 - - [19/Jun/2021 19:50:40] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:40,106 INFO 127.0.0.1 - - [19/Jun/2021 19:50:40] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:40,108 INFO 127.0.0.1 - - [19/Jun/2021 19:50:40] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:41,546 INFO 127.0.0.1 - - [19/Jun/2021 19:50:41] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:41,546 INFO 127.0.0.1 - - [19/Jun/2021 19:50:41] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:41,548 INFO 127.0.0.1 - - [19/Jun/2021 19:50:41] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:41,549 INFO 127.0.0.1 - - [19/Jun/2021 19:50:41] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:41,550 INFO 127.0.0.1 - - [19/Jun/2021 19:50:41] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:41,551 INFO 127.0.0.1 - - [19/Jun/2021 19:50:41] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:42,262 INFO 127.0.0.1 - - [19/Jun/2021 19:50:42] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:42,264 INFO 127.0.0.1 - - [19/Jun/2021 19:50:42] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:50:42,265 INFO 127.0.0.1 - - [19/Jun/2021 19:50:42] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:06,335 INFO 127.0.0.1 - - [19/Jun/2021 19:52:06] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:52:06,398 INFO 127.0.0.1 - - [19/Jun/2021 19:52:06] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:52:06,451 INFO 127.0.0.1 - - [19/Jun/2021 19:52:06] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 19:52:08,181 INFO 127.0.0.1 - - [19/Jun/2021 19:52:08] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:08,182 INFO 127.0.0.1 - - [19/Jun/2021 19:52:08] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:08,184 INFO 127.0.0.1 - - [19/Jun/2021 19:52:08] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:08,185 INFO 127.0.0.1 - - [19/Jun/2021 19:52:08] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:08,187 INFO 127.0.0.1 - - [19/Jun/2021 19:52:08] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:08,187 INFO 127.0.0.1 - - [19/Jun/2021 19:52:08] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:09,571 INFO 127.0.0.1 - - [19/Jun/2021 19:52:09] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:09,572 INFO 127.0.0.1 - - [19/Jun/2021 19:52:09] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:09,574 INFO 127.0.0.1 - - [19/Jun/2021 19:52:09] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:09,575 INFO 127.0.0.1 - - [19/Jun/2021 19:52:09] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:09,576 INFO 127.0.0.1 - - [19/Jun/2021 19:52:09] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:09,578 INFO 127.0.0.1 - - [19/Jun/2021 19:52:09] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:10,278 INFO 127.0.0.1 - - [19/Jun/2021 19:52:10] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:10,278 INFO 127.0.0.1 - - [19/Jun/2021 19:52:10] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:52:10,279 INFO 127.0.0.1 - - [19/Jun/2021 19:52:10] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:12,209 INFO 127.0.0.1 - - [19/Jun/2021 19:56:12] "OPTIONS /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:56:12,256 INFO 127.0.0.1 - - [19/Jun/2021 19:56:12] "POST /bugCatch/login HTTP/1.1" 200 -
+2021-06-19 19:56:12,310 INFO 127.0.0.1 - - [19/Jun/2021 19:56:12] "GET /bugCatch/requests HTTP/1.1" 200 -
+2021-06-19 19:56:13,721 INFO 127.0.0.1 - - [19/Jun/2021 19:56:13] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:13,722 INFO 127.0.0.1 - - [19/Jun/2021 19:56:13] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:13,724 INFO 127.0.0.1 - - [19/Jun/2021 19:56:13] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:13,725 INFO 127.0.0.1 - - [19/Jun/2021 19:56:13] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:13,727 INFO 127.0.0.1 - - [19/Jun/2021 19:56:13] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:13,728 INFO 127.0.0.1 - - [19/Jun/2021 19:56:13] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,194 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,194 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,195 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,196 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,196 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,197 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,884 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,885 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
+2021-06-19 19:56:15,886 INFO 127.0.0.1 - - [19/Jun/2021 19:56:15] "GET /bugCatch/stats HTTP/1.1" 200 -
