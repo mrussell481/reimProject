@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: rgb(180, 255, 128);
+        }
+
+        .hidden{
+            display: None;
+        }
+        .chart_container{
+            width:400px;
+            height:400px
+        }
+        .image_style_1{
+            width:500px;
+            margin:50px ;
+            float:right;
+            top:-40px;
+            -ms-transform: scale(0.5, 0.5); /* IE 9 */
+            -webkit-transform: scale(0.5, 0.5); /* Safari */
+            transform: scale(0.5, 0.5);
+        }
+        .image_style_2{
+            width:0px ;
+            margin:0px ;
+            float:left;
+            top:-40px;
+            -ms-transform: scale(0.3, 0.3); /* IE 9 */
+            -webkit-transform: scale(0.3, 0.3); /* Safari */
+            transform: scale(0.3, 0.3);
+        }
+        .title{
+            text-align: center;
+        }
+        div{
+            width:50%;
+            margin:auto
+        }
+        .header_1{
+            font-size: xx-large;
+            color:orangered;
+            font-family: cursive;
+        }
+        .header_2{
+            font-size: larger;
+            color:midnightblue;
+            font-family: cursive;
+        }
+    </style>
+    <style type="text/css">
+        td
+        {
+            padding:0 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <p id="hello_world" class="manager">Hello World</p>
+    <p id="manager_check" class="member">I am not a manager</p> -->
+
+    <!-- Each of the 5 divs represent a "web page" that is shown/hidden depending on where the user is.-->
+    <div class="title">
+        <header class="header_1">"Bug" Catching Reimbursement Page</header>
+        <header class="header_2">Help us fix our software!</header>
+    </div>
+    <br>
+    <br>
+    <div id="image" class="image_style_1">
+        <img src="https://mrussell2105python.s3.amazonaws.com/butterfly.png" alt="Caterpillar">
+    </div>
+    <div id="image" class="image_style_2">
+        <img src="https://mrussell2105python.s3.amazonaws.com/caterpillar.png" alt="Caterpillar">
+    </div>
+
+    <!-- This is the first page the user sees; all others should be hidden, and this one disappears after a successful login.-->
+    <div id="login_form" class="title">
+        <label for="user_field">Username:</label>
+        <input id="user_field" type="text">
+        <label for="pass_field">Password:</label>
+        <input id="pass_field" type="password">
+        <button id="login_button" onclick="login()">Login</button>
+    </div>
+
+    <!-- This page appears after logging in.-->
+    <div id="request_form">
+        <table>
+            <thead><th>Request</th><th>Date</th><th>Approved</th></thead>
+            <tbody id="request_list"></tbody>
+        </table>
+        <button id="new_request_button" class="member" onclick="showNewForm()">Submit New Bug</button>
+    </div>
+
+    <!-- This page appears after clicking on a request from the list.-->
+    <div id="single_request_form">
+        <table>
+            <thead><th>Name</th><th>Date</th><th>Member</th><th>Details</th><th>Amount</th><th>Approved</th><th>Comment</th></thead>
+            <tbody id="single_request_list"></tbody>
+        </table>
+        <br>
+        <button id="deny_button" class="manager" onclick="judge(false)">Deny</button>
+        <button id="approve_button" class="manager" onclick="judge(true)">Approve</button>
+        <label for="comment_box" class="manager">Reason for approving/denying request:</label>
+        <input id="comment_box" class="manager" type="text">
+        <br>
+        <p id="judge_response" class="manager"></p>
+        <br>
+        <button id="return_button_1" onclick="showMain()">Return</button>
+    </div>
+
+    <!-- This page appears if a member clicks on the "Submit New Bug" button.-->
+    <div id="new_request_form" class="member">
+        <label for="bug_name_field">Bug Name:</label>
+        <input id="bug_name_field" type="text">
+        <label for="bug_desc_field">Description:</label>
+        <input id="bug_desc_field" type="text">
+        <button id="submit_request_button" onclick="newRequest()">Submit</button>
+        <br>
+        <p id="server_response"></p>
+        <br>
+        <button id="return_button_2" onclick="showMain()">Return</button>
+    </div>
+
+    <!-- This is a special page that appears below the request list page if the user is a manager.-->
+    <br>
+    <br>
+    <div id="stats_form" class="manager">
+        <head>Statistics</head>
+        <p id="richest_member">Richest Member:</p>
+        <p id="requesting_member">Member with the Most Requests:</p>
+        <p id="total_requests">Total Number of Requests: </p>
+        <p id="total_amount">Total Amount of Money Made by Members: </p>
+        <p id="accept_rate">Percentage of Approved Requests:</p>
+        <p id="average_requests">Average Number of Requests per Member:</p>
+    </div>
+
+    <div id="chart_form" class="chart_container manager">
+        <canvas id="myChart"></canvas>
+        <br>
+        <input type="button" value="Do Not Press" onclick="window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'" />
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.js"></script>
+<script>
+
+    //Gets all needed elements from HTML:
+    //Login fields and request table
+    const user_input = document.getElementById("user_field");
+    const pass_input = document.getElementById("pass_field");
+    const requestTableBody = document.getElementById("request_list");
+
+    //"Pages" that are just elements grouped into divs that are shown/hidden as needed
+    const loginForm = document.getElementById("login_form");
+    const requestForm = document.getElementById("request_form");
+    const singleRequestForm = document.getElementById("single_request_form");
+    const newRequestForm = document.getElementById("new_request_form");
+    const statsForm = document.getElementById("stats_form");
+    const chartForm = document.getElementById("chart_form");
+
+    //Special elements that show depending on whether the user is a member or a manager
+    const managerActions = document.getElementsByClassName("manager");
+    const memberActions = document.getElementsByClassName("member");
+
+    //Hides all divs except for the login
+    requestForm.classList.add("hidden");
+    singleRequestForm.classList.add("hidden");
+    newRequestForm.classList.add("hidden");
+    statsForm.classList.add("hidden");
+    chartForm.classList.add("hidden");
+
+
+    //This long function executes when a user presses the log-in button. It does the following:
+    //1. Returns a user object from the database if it can find one
+    //2. Returns a list of requests depending on the user's type
+    //3. Populates the request list with the requests it retrieved from the database
+    //4. Hides member functions if the user is a manager, and vice-versa, and
+    //5. Hides the user div and displays the request list div, along with the stats div if the user is a manager.
+    async function login(){
+
+        //Login using the given username and password and create an object with the user's info
+        const login_form = {
+            userName:user_input.value,
+            password:pass_input.value
+        }
+
+        const userNameLength = login_form.userName.length
+        const passwordLength = login_form.password.length
+
+        if (userNameLength == 0 || userNameLength > 50){
+            alert("Please enter a valid username.");
+            return;
+        }
+
+        if (passwordLength == 0 || passwordLength > 50){
+            alert("Please enter a valid password.");
+            return;
+        }
+
+        const config = {
+            method:"POST",
+            headers:{'Content-Type':"application/json"},
+            body: JSON.stringify(login_form)
+        }
+
+        const response = await fetch("http://localhost:5000/bugCatch/login", config);
+        if (response.status != 200){
+            alert("User account not found.");
+            return;
+        }
+        user_object = await response.json();
+
+        //Confirm that the user is a member or manager and return an appropriate list of requests for them
+        //IF the user is a manager, do AB and C, ELSE do XY and Z as a member
+        let innerRows = "";
+        if ("managerId" in user_object){
+
+            //Hide all member-related stuff and show the stats page
+            for(let x of memberActions){
+                x.classList.add("hidden");
+            }
+
+            //Populate the request list with all requests
+            let counter = 0;
+            const response2 = await fetch("http://localhost:5000/bugCatch/requests");
+            requestList = await response2.json();
+            for(let request of requestList){
+                innerRows+= `<tr>
+                    <td>${request.reimbursementName}</td>
+                    <td>${new Date(request.date * 1000)}</td>
+                    <td>${request.approved === null ? "pending" : request.approved}</td>
+                    <td><button id="request_button_${counter}" onclick="openRequest(${counter})">Open</button>
+                    </tr>`
+                counter += 1;
+
+            //Brings up the stats page
+            stats();
+            statsForm.classList.remove("hidden");
+            chartForm.classList.remove("hidden");
+            }
+        }else{
+
+            //Hide all manager-related content
+            for(let x of managerActions){
+                x.classList.add("hidden");
+            }
+
+            //Populate the request list only with the member's requests
+            let counter = 0;
+            let request_url = "http://localhost:5000/bugCatch/requests/xx";
+            request_url = request_url.replace("xx", String(user_object.memberId));
+            const response2 = await fetch(request_url);
+            requestList = await response2.json();
+            for(let request of requestList){
+                innerRows+= `<tr>
+                    <td>${request.reimbursementName}</td>
+                    <td>${new Date(request.date * 1000)}</td>
+                    <td>${request.approved === null ? "pending" : request.approved}</td>
+                    <td><button id="request_button_${counter}" onclick="openRequest(${counter})">Open</button>
+                    </tr>`
+                counter += 1;
+            }
+        }
+        requestTableBody.innerHTML = innerRows;
+
+        //Change Title Name
+        document.title = "Main Page";
+
+        //Close the login form and display the main view
+        requestForm.classList.remove("hidden");
+        loginForm.classList.add("hidden");
+    }
+
+
+    // This executes when the user clicks on a request from the list.
+    // It displays additional info about a request and formats some values into a more readable form (i.e. epoch time into standard time).
+    function openRequest(requestId){
+
+        //Pull needed elements from HTML
+        //const requestButton = document.getElementById(`request${requestId}`);
+        //const test_response = document.getElementById("hello_world");
+        const requestTable = document.getElementById("single_request_list");
+        const request = requestList[requestId];
+        currentRequest = request.reimbursementId;
+        currentMember = request.memberId;
+
+        //test_response.innerHTML = "Hello World";
+        //requestButton.innerText = "Hello World";
+
+        //Hide other divs except for this one
+        requestForm.classList.add("hidden");
+        singleRequestForm.classList.remove("hidden");
+        statsForm.classList.add("hidden");
+        chartForm.classList.add("hidden");
+
+        //Add info to a request table with only one row
+        requestTable.innerHTML = `<tr>
+                    <td>${request.reimbursementName}</td>
+                    <td>${new Date(request.date * 1000)}</td>
+                    <td>${request.sender}</td>
+                    <td>${request.reason}</td>
+                    <td>$${request.amount}</td>
+                    <td>${request.approved === null ? "pending" : request.approved}</td>
+                    <td>${request.comment === null ? "No comment" : request.comment}</td>
+                    </tr>`;
+
+        //Change Title Name
+        document.title = `${request.reimbursementName}`;
+    }
+
+
+    //This function is called from several buttons throughout the page and switches the view to the main reimbursement viewer.
+    function showMain(){
+        const judgeMessage = document.getElementById("judge_response");
+        const createMessage = document.getElementById("server_response");
+
+        //Change Title Name
+        document.title = "Main Page";
+
+        judgeMessage.innerText = "";
+        createMessage.innerText = "";
+        requestForm.classList.remove("hidden");
+        singleRequestForm.classList.add("hidden");
+        newRequestForm.classList.add("hidden");
+        if ("managerId" in user_object){
+            statsForm.classList.remove("hidden");
+            chartForm.classList.remove("hidden");
+        }
+    }
+
+
+    //Switches views to creating a new request. Members only.
+    function showNewForm(){
+
+        //Change Title Name
+        document.title = "New Bug";
+
+        newRequestForm.classList.remove("hidden");
+        requestForm.classList.add("hidden");
+    }
+
+
+    //Uploads a new request. Members only.
+    async function newRequest(){
+        const bugName = document.getElementById("bug_name_field");
+        const bugDesc = document.getElementById("bug_desc_field");
+        const serverResponse = document.getElementById("server_response")
+        const currentDate = new Date().valueOf();
+        const epochDate = Math.round(currentDate / 1000);
+
+        serverResponse.innerText = "";
+
+        const request_form = {
+            reimbursementID:0,
+            reimbursementName:bugName.value,
+            sender:user_object.memberName,
+            reason:bugDesc.value,
+            amount:0,
+            date:epochDate,
+            approved:null,
+            comment:null,
+            memberId:user_object.memberId
+        }
+
+        const bugNameLength = request_form.reimbursementName.length;
+        const bugDescLength = request_form.reason.length;
+
+        if(bugNameLength == 0){
+            alert("Please enter the name of your bug.");
+            return;
+        }else if(bugNameLength > 100){
+            alert("Please limit your name to 50 characters or fewer.");
+            return;
+        }
+
+        if(bugDescLength == 0){
+            alert("Please describe your bug.");
+            return;
+        }else if(bugDescLength > 250){
+            alert("Please limit your description to 250 characters or fewer.");
+            return;
+        }
+
+        const config = {
+            method:"POST",
+            headers:{'Content-Type':"application/json"},
+            body: JSON.stringify(request_form)
+        }
+        
+        const response = await fetch(`http://localhost:5000/bugCatch/member/${user_object.memberId}/create`, config);
+
+        if (response.status == 201){
+            serverResponse.innerText = "Successfully uploaded new bug!";
+        }else{
+            serverResponse.innerText = "Response could not be uploaded.";
+        }
+    }
+
+
+    //Updates the "approved" and "comment" fields of a request. Managers only.
+    async function judge(userVerdict){
+        const commentBox = document.getElementById("comment_box");
+        const judgeResponse = document.getElementById("judge_response");
+
+        const judgeForm = {
+            verdict:userVerdict,
+            comment:commentBox.value
+        }
+
+        const commentLength = judgeForm.comment.length;
+        if(commentLength > 250){
+            alert("Please limit your comment to 250 characters or fewer.");
+        }
+
+        const config = {
+            method:"PATCH",
+            headers:{'Content-Type':"application/json"},
+            body: JSON.stringify(judgeForm)
+        }
+
+        const response = await fetch(`http://localhost:5000/bugCatch/member/${currentMember}/reim/${currentRequest}/judge`, config);
+
+        if (response.status == 200){
+            judgeResponse.innerText = "Successfully updated request!";
+        }else{
+            judgeResponse.innerText = "An error occured while updating approval status.";
+        }
+    }
+
+
+    //Shows various statisics from the request list, as well as a pie chart for the acceptance rate of requests
+    async function stats(){
+        const statsForm = document.getElementById("stats_form");
+        const richMember = document.getElementById("richest_member");
+        const requestingMember = document.getElementById("requesting_member");
+        const totalRequests = document.getElementById("total_requests");
+        const totalAmount = document.getElementById("total_amount");
+        const acceptRate = document.getElementById("accept_rate");
+        const averageRequests = document.getElementById("average_requests");
+
+        const response = await fetch("http://localhost:5000/bugCatch/stats");
+        const responseList = await response.json();
+        const responseString = JSON.stringify(responseList);
+
+        richMember.innerText = `Richest Member: ${responseList[0]} who has made $${responseList[1]}.`;
+        requestingMember.innerText = `Member with the Most Requests: ${responseList[2]} with ${responseList[3]} requests.`;
+        totalRequests.innerText = `Total Number of Requests: ${responseList[4]}`;
+        totalAmount.innerText = `Total Amount of Money Made by Members: $${responseList[5]}`;
+        acceptRate.innerText = `Percentage of Approved Requests: ${responseList[6]}%`;
+        averageRequests.innerText = `Average Number of Requests per Member: ${responseList[7]}`;
+
+        const ctx = document.getElementById('myChart');
+        let myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: [
+                    'Approved',
+                    'Denied or Pending'
+                ],
+                datasets: [{
+                    label: 'Request Acceptance Rate',
+                    data: [responseList[8], (responseList[4] - responseList[8])],
+                    backgroundColor: [
+                      'rgb(80, 225, 80)',
+                      'rgb(200, 60, 60)'
+                    ],
+                    hoverOffset: 4
+                }],
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
+                }
+            },    
+        }); 
+    }
+
+    
+</script>
+</html>

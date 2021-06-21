@@ -26,7 +26,7 @@ member_service = MemberServiceImpl(member_dao)
 # Returns an HTML with no other logic.
 @app.route("/", methods=["GET"])
 def home_page():
-    return render_template("GatorFanPage.html")
+    return render_template("main.html")
 
 
 # A single page serves as a login, reimbursement viewer and manager, as well as a stats page.
@@ -36,7 +36,7 @@ def home_page():
 # The initial routing to this 'God page' only returns an HTML.
 @app.route("/bugCatch", methods=["GET"])
 def main_page():
-    return render_template("pokeviewer.html")
+    return render_template("main.html")
 
 
 # Log-in request that looks for a user in both the member and manager tables,
